@@ -1,1 +1,33 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 320 286"><path fill="rgb(10,122,255)" d="M69.364 19.146c36.687 27.806 76.147 84.186 90.636 114.439 14.489-30.253 53.948-86.633 90.636-114.439C277.107-.917 320-16.44 320 32.957c0 9.865-5.603 82.875-8.889 94.729-11.423 41.208-53.045 51.719-90.071 45.357 64.719 11.12 81.182 47.953 45.627 84.785-80 82.874-106.667-44.333-106.667-44.333s-26.667 127.207-106.667 44.333c-35.555-36.832-19.092-73.665 45.627-84.785-37.026 6.362-78.648-4.149-90.071-45.357C5.603 115.832 0 42.822 0 32.957 0-16.44 42.893-.917 69.364 19.147Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 64 57">
+    <desc>European flag</desc>
+    <defs>
+        <g id="s">
+            <g id="c">
+                <path id="t" d="M0,0v1h0.5z" transform="translate(0,-1)rotate(18)" />
+                <use xlink:href="#t" transform="scale(-1,1)" />
+            </g>
+            <g id="a">
+                <use xlink:href="#c" transform="rotate(72)" />
+                <use xlink:href="#c" transform="rotate(144)" />
+            </g>
+            <use xlink:href="#a" transform="scale(-1,1)" />
+        </g>
+    </defs>
+    <rect fill="#039" width="64" height="57" rx="5" />
+    <g fill="#fc0" transform="scale(3.8)translate(8.4,8)">
+        <use xlink:href="#s" y="-6" />
+        <use xlink:href="#s" y="6" />
+        <g id="l">
+            <use xlink:href="#s" x="-6" />
+            <use xlink:href="#s" transform="rotate(150)translate(0,6)rotate(66)" />
+            <use xlink:href="#s" transform="rotate(120)translate(0,6)rotate(24)" />
+            <use xlink:href="#s" transform="rotate(60)translate(0,6)rotate(12)" />
+            <use xlink:href="#s" transform="rotate(30)translate(0,6)rotate(42)" />
+        </g>
+        <use xlink:href="#l" transform="scale(-1,1)" />
+    </g>
+    <path fill="#1285fe" transform="scale(0.95)translate(2,2)"
+        d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z" />
+
+
+</svg>

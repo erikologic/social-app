@@ -29,8 +29,8 @@ module.exports = function (_config) {
   const UPDATES_CHANNEL = IS_TESTFLIGHT
     ? 'testflight'
     : IS_PRODUCTION
-    ? 'production'
-    : undefined
+      ? 'production'
+      : undefined
   const UPDATES_ENABLED = !!UPDATES_CHANNEL
 
   const USE_SENTRY = Boolean(process.env.SENTRY_AUTH_TOKEN)
@@ -38,10 +38,10 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'Bluesky',
-      slug: 'bluesky',
-      scheme: 'bluesky',
-      owner: 'blueskysocial',
+      name: 'Eurosky',
+      slug: 'eurosky',
+      scheme: 'eurosky',
+      owner: 'euroskysocial',
       runtimeVersion: {
         policy: 'appVersion',
       },
@@ -50,7 +50,7 @@ module.exports = function (_config) {
       primaryColor: '#1083fe',
       ios: {
         supportsTablet: false,
-        bundleIdentifier: 'xyz.blueskyweb.app',
+        bundleIdentifier: 'xyz.euroskyweb.app',
         config: {
           usesNonExemptEncryption: false,
         },
@@ -153,7 +153,7 @@ module.exports = function (_config) {
           backgroundColor: '#1185FE',
         },
         googleServicesFile: './google-services.json',
-        package: 'xyz.blueskyweb.app',
+        package: 'xyz.euroskyweb.app',
         intentFilters: [
           {
             action: 'VIEW',
@@ -184,9 +184,9 @@ module.exports = function (_config) {
           : undefined,
         codeSigningMetadata: UPDATES_ENABLED
           ? {
-              keyid: 'main',
-              alg: 'rsa-v1_5-sha256',
-            }
+            keyid: 'main',
+            alg: 'rsa-v1_5-sha256',
+          }
           : undefined,
         checkAutomatically: 'NEVER',
         channel: UPDATES_CHANNEL,
@@ -197,12 +197,12 @@ module.exports = function (_config) {
         'expo-web-browser',
         [
           'react-native-edge-to-edge',
-          {android: {enforceNavigationBarContrast: false}},
+          { android: { enforceNavigationBarContrast: false } },
         ],
         USE_SENTRY && [
           '@sentry/react-native/expo',
           {
-            organization: 'blueskyweb',
+            organization: 'euroskyweb',
             project: 'app',
             url: 'https://sentry.io',
           },
@@ -307,7 +307,7 @@ module.exports = function (_config) {
             },
 
             /**
-             * Bluesky+ core set
+             * Eurosky+ core set
              */
             core_aurora: {
               ios: './assets/app-icons/ios_icon_core_aurora.png',
@@ -356,7 +356,7 @@ module.exports = function (_config) {
             },
           },
         ],
-        ['expo-screen-orientation', {initialOrientation: 'PORTRAIT_UP'}],
+        ['expo-screen-orientation', { initialOrientation: 'PORTRAIT_UP' }],
       ].filter(Boolean),
       extra: {
         eas: {
@@ -365,8 +365,8 @@ module.exports = function (_config) {
               ios: {
                 appExtensions: [
                   {
-                    targetName: 'Share-with-Bluesky',
-                    bundleIdentifier: 'xyz.blueskyweb.app.Share-with-Bluesky',
+                    targetName: 'Share-with-Eurosky',
+                    bundleIdentifier: 'xyz.euroskyweb.app.Share-with-Eurosky',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -374,8 +374,8 @@ module.exports = function (_config) {
                     },
                   },
                   {
-                    targetName: 'BlueskyNSE',
-                    bundleIdentifier: 'xyz.blueskyweb.app.BlueskyNSE',
+                    targetName: 'EuroskyNSE',
+                    bundleIdentifier: 'xyz.euroskyweb.app.EuroskyNSE',
                     entitlements: {
                       'com.apple.security.application-groups': [
                         'group.app.bsky',
@@ -383,8 +383,8 @@ module.exports = function (_config) {
                     },
                   },
                   {
-                    targetName: 'BlueskyClip',
-                    bundleIdentifier: 'xyz.blueskyweb.app.AppClip',
+                    targetName: 'EuroskyClip',
+                    bundleIdentifier: 'xyz.euroskyweb.app.AppClip',
                   },
                 ],
               },

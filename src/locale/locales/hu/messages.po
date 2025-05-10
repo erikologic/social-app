@@ -120,7 +120,7 @@ msgstr "{0, plural, one {megosztás} other {megosztás}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, other {{1} bejegyzés}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Eurosky using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:485
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, one {}other {#}} személy regisztrált ezzel a kezdőcsomaggal!"
@@ -347,7 +347,7 @@ msgstr ""
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr ""
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Eurosky using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {#}} felhasználó csatlakozott ezzel!"
@@ -361,12 +361,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, one {# olvasatlan értesítés} other {# olvasatlan értesítés}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} {0} ezelőtt csatlakozott a Blueskyhoz"
+msgid "{profileName} joined Eurosky {0} ago"
+msgstr "{profileName} {0} ezelőtt csatlakozott a Euroskyhoz"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} {0} ezelőtt csatlakozott a Blueskyhoz egy kezdőcsomag igénybevételével"
+msgid "{profileName} joined Eurosky using a starter pack {0} ago"
+msgstr "{profileName} {0} ezelőtt csatlakozott a Euroskyhoz egy kezdőcsomag igénybevételével"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:107
@@ -559,8 +559,8 @@ msgid "Account unmuted"
 msgstr "Feloldottad a fiók némítását"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Másokat hitelesíteni csak a <0><1/></0> recés pipával rendelkező fiókok képesek. Ezeket a megbízható hitelesítőket a Bluesky jelöli ki."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Eurosky."
+msgstr "Másokat hitelesíteni csak a <0><1/></0> recés pipával rendelkező fiókok képesek. Ezeket a megbízható hitelesítőket a Eurosky jelöli ki."
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:169
 #: src/components/dialogs/MutedWords.tsx:328
@@ -881,8 +881,8 @@ msgstr "A videó feltöltése meghiúsult."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "A megbízható hitelesítőket a Bluesky jelöli ki, akik ezután képesek más személyeket hitelesíteni."
+msgid "An illustration showing that Eurosky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "A megbízható hitelesítőket a Eurosky jelöli ki, akik ezután képesek más személyeket hitelesíteni."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -907,8 +907,8 @@ msgid "An issue occurred, please try again."
 msgstr "Hiba történt. Próbáld újra!"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Egy kék pipával rendelkező felhasználó, az iPhone-os Bluesky-alkalmazásban megjelenítve."
+msgid "An mockup of a iPhone showing the Eurosky app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Egy kék pipával rendelkező felhasználó, az iPhone-os Eurosky-alkalmazásban megjelenítve."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:185
 msgid "an unknown error occurred"
@@ -933,8 +933,8 @@ msgid "Animated GIF"
 msgstr "Animált GIF"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Hitelesítés a Blueskyon"
+msgid "Announcing verification on Eurosky"
+msgstr "Hitelesítés a Euroskyon"
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1271,54 +1271,54 @@ msgstr "Blog"
 
 #: src/view/com/auth/server-input/index.tsx:136
 #: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
+msgid "Eurosky"
+msgstr "Eurosky"
 
 #: src/view/com/post-thread/PostThreadItem.tsx:915
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "A Bluesky nem tudja megerősíteni a létrehozás dátumát."
+msgid "Eurosky cannot confirm the authenticity of the claimed date."
+msgstr "A Eurosky nem tudja megerősíteni a létrehozás dátumát."
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:129
 msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Klasszikus Bluesky"
+msgid "Eurosky Classic™"
+msgstr "Klasszikus Eurosky"
 
 #: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "A Bluesky egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha fejlesztő vagy, saját kiszolgálót is üzemeltethetsz."
+msgid "Eurosky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "A Eurosky egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha fejlesztő vagy, saját kiszolgálót is üzemeltethetsz."
 
 #: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "A Bluesky egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha kezdő felhasználó vagy, akkor az alapértelmezett Bluesky Social lehetőséget javasoljuk."
+msgid "Eurosky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Eurosky Social option."
+msgstr "A Eurosky egy nyílt hálózat, ahol saját szolgáltatót választhatsz. Ha kezdő felhasználó vagy, akkor az alapértelmezett Eurosky Social lehetőséget javasoljuk."
 
 #: src/components/ProgressGuide/List.tsx:53
 #: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "A Bluesky ismerősökkel még jobb!"
+msgid "Eurosky is better with friends!"
+msgstr "A Eurosky ismerősökkel még jobb!"
 
 #: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "A Bluesky felhasználási feltételei"
+msgid "Eurosky Social Terms of Service"
+msgstr "A Eurosky felhasználási feltételei"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "A Bluesky egy javasolt felhasználócsoportot fog kijelölni a hálózatodon."
+msgid "Eurosky will choose a set of recommended accounts from people in your network."
+msgstr "A Eurosky egy javasolt felhasználócsoportot fog kijelölni a hálózatodon."
 
 #: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "A Bluesky nem fogja mutatni a profilodat és a bejegyzéseidet a kijelentkezett felhasználók számára. Lehetséges, hogy ezt a kérést nem minden alkalmazás fogja tiszteletben tartani. Ez a beállítás nem teszi priváttá a profilodat."
+msgid "Eurosky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "A Eurosky nem fogja mutatni a profilodat és a bejegyzéseidet a kijelentkezett felhasználók számára. Lehetséges, hogy ezt a kérést nem minden alkalmazás fogja tiszteletben tartani. Ez a beállítás nem teszi priváttá a profilodat."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "A Bluesky mostantól hitelesíti a jelentős és megbízható fiókokat."
+msgid "Eurosky will proactively verify notable and authentic accounts."
+msgstr "A Eurosky mostantól hitelesíti a jelentős és megbízható fiókokat."
 
 #: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
+msgid "Eurosky+"
+msgstr "Eurosky+"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Bluesky+-ikonok"
+msgid "Eurosky+ icons"
+msgstr "Eurosky+-ikonok"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -1842,7 +1842,7 @@ msgstr "Közösségi irányelvek"
 
 #: src/screens/Onboarding/StepFinished.tsx:311
 msgid "Complete onboarding and start using your account"
-msgstr "Regisztrációs varázsló befejezése és a Bluesky használatának megkezdése"
+msgstr "Regisztrációs varázsló befejezése és a Eurosky használatának megkezdése"
 
 #: src/screens/Signup/index.tsx:162
 msgid "Complete the challenge"
@@ -2221,7 +2221,7 @@ msgid "Customize who can interact with this post."
 msgstr "Add meg, hogy ki léphet kapcsolatba ezzel a bejegyzéssel!"
 
 #: src/screens/Onboarding/Layout.tsx:56
-msgid "Customizes your Bluesky experience"
+msgid "Customizes your Eurosky experience"
 msgstr "A Bluseky-élményed testreszabása"
 
 #: src/components/dialogs/Embed.tsx:167
@@ -2613,8 +2613,8 @@ msgid "Double tap to like"
 msgstr "Koppints kétszer a kedveléshez"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "A Bluesky letöltése"
+msgid "Download Eurosky"
+msgstr "A Eurosky letöltése"
 
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
@@ -3389,8 +3389,8 @@ msgid "Find people to follow"
 msgstr "Követendő személyek felfedezése"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Bejegyzések, felhasználók és hírfolyamok felfedezése a Blueskyon"
+msgid "Find posts, users, and feeds on Eurosky"
+msgstr "Bejegyzések, felhasználók és hírfolyamok felfedezése a Euroskyon"
 
 #: src/screens/StarterPack/Wizard/index.tsx:195
 msgid "Finish"
@@ -4139,7 +4139,7 @@ msgstr "Még csak Te szerepelsz a kezdőcsomagban. A fenti keresővel másokat i
 msgid "Job ID: {0}"
 msgstr "Állásazonosító: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Eurosky
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "Karrier"
@@ -4148,8 +4148,8 @@ msgstr "Karrier"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:461
 #: src/screens/StarterPack/StarterPackScreen.tsx:472
-msgid "Join Bluesky"
-msgstr "Csatlakozz a Blueskyhoz!"
+msgid "Join Eurosky"
+msgstr "Csatlakozz a Euroskyhoz!"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4232,8 +4232,8 @@ msgid "Learn More"
 msgstr "További információ"
 
 #: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "További információ a Blueskyról"
+msgid "Learn more about Eurosky"
+msgstr "További információ a Euroskyról"
 
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
@@ -4254,13 +4254,13 @@ msgstr "További információ erről a figyelmeztetésről"
 
 #: src/components/verification/VerificationsDialog.tsx:150
 #: src/components/verification/VerifierDialog.tsx:117
-msgid "Learn more about verification on Bluesky"
-msgstr "További információ a Blueskyos hitelesítésől"
+msgid "Learn more about verification on Eurosky"
+msgstr "További információ a Euroskyos hitelesítésől"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:99
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:102
-msgid "Learn more about what is public on Bluesky."
-msgstr "További információ a Bluesky-tartalmak nyilvánosságáról."
+msgid "Learn more about what is public on Eurosky."
+msgstr "További információ a Eurosky-tartalmak nyilvánosságáról."
 
 #: src/components/moderation/ContentHider.tsx:239
 #: src/view/com/auth/server-input/index.tsx:220
@@ -4289,8 +4289,8 @@ msgid "Leave them all unchecked to see any language."
 msgstr "Az összes nyelv megjelenítéséhez kapcsolj ki minden nyelvet."
 
 #: src/view/com/modals/LinkWarning.tsx:65
-msgid "Leaving Bluesky"
-msgstr "A Bluesky elhagyása"
+msgid "Leaving Eurosky"
+msgstr "A Eurosky elhagyása"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
@@ -5174,8 +5174,8 @@ msgid "Note about sharing"
 msgstr "Korlátozott láthatóság"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:88
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Megjegyzés: A Bluesky egy nyílt és nyilvános hálózat. Ez a beállítás csak a Bluesky alkalmazásban és -honlapon korlátozza a tartalmaid láthatóságát és nem biztos, hogy más alkalmazások is tiszteletben tartják. Lehetséges, hogy más alkalmazásokban és honlapokon ugyanúgy láthatóak maradnak a tartalmaid kijelentkezett felhasználók számára is."
+msgid "Note: Eurosky is an open and public network. This setting only limits the visibility of your content on the Eurosky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Megjegyzés: A Eurosky egy nyílt és nyilvános hálózat. Ez a beállítás csak a Eurosky alkalmazásban és -honlapon korlátozza a tartalmaid láthatóságát és nem biztos, hogy más alkalmazások is tiszteletben tartják. Lehetséges, hogy más alkalmazásokban és honlapokon ugyanúgy láthatóak maradnak a tartalmaid kijelentkezett felhasználók számára is."
 
 #: src/screens/Messages/ChatList.tsx:265
 msgid "Nothing here"
@@ -5438,12 +5438,12 @@ msgstr "Emojiválasztó megnyitása"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
+msgid "Opens flow to create a new Eurosky account"
 msgstr "Regisztrációs varázsló indítása"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
+msgid "Opens flow to sign in to your existing Eurosky account"
 msgstr "Bejelentkezési varázsló megnyitása"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
@@ -5535,8 +5535,8 @@ msgid "Our moderation team has received your report."
 msgstr "Megkaptuk a jelentésedet."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:28
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "A fiókod ellen jelentések érkeztek, és miután a moderátoraink felülvizsgálták őket, úgy döntöttek, hogy megfosztanak a csevegési jogosultságoktól a Blueskyon."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Eurosky."
+msgstr "A fiókod ellen jelentések érkeztek, és miután a moderátoraink felülvizsgálták őket, úgy döntöttek, hogy megfosztanak a csevegési jogosultságoktól a Euroskyon."
 
 #: src/components/Lists.tsx:190
 #: src/view/screens/NotFound.tsx:47
@@ -5709,8 +5709,8 @@ msgid "Please choose your password."
 msgstr "Válassz ki egy jelszót!"
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
-msgstr "Kérjük, kattints a tőlünk kapott emailben található hivatkozásra a címed visszaigazolásához! Ez fontos, ha továbbra is használni kívánod a Bluesky összes funkcióját."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Eurosky."
+msgstr "Kérjük, kattints a tőlünk kapott emailben található hivatkozásra a címed visszaigazolásához! Ez fontos, ha továbbra is használni kívánod a Eurosky összes funkcióját."
 
 #: src/screens/Signup/state.ts:301
 msgid "Please complete the verification captcha."
@@ -6125,18 +6125,18 @@ msgid "Read more"
 msgstr "Több"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "A Bluesky blog megnyitása (angolul)"
+msgid "Read the Eurosky blog"
+msgstr "A Eurosky blog megnyitása (angolul)"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:58
 #: src/screens/Signup/StepInfo/Policies.tsx:84
-msgid "Read the Bluesky Privacy Policy"
-msgstr "A Bluesky adatvédelmi irányelveinek megtekintése"
+msgid "Read the Eurosky Privacy Policy"
+msgstr "A Eurosky adatvédelmi irányelveinek megtekintése"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:51
 #: src/screens/Signup/StepInfo/Policies.tsx:71
-msgid "Read the Bluesky Terms of Service"
-msgstr "A Bluesky felhasználói feltételeinek megtekintése"
+msgid "Read the Eurosky Terms of Service"
+msgstr "A Eurosky felhasználói feltételeinek megtekintése"
 
 #: src/screens/Takendown.tsx:162
 #: src/screens/Takendown.tsx:170
@@ -6865,8 +6865,8 @@ msgid "See #{tag} posts by user"
 msgstr "A felhasználó #{tag} címkével ellátott bejegyzéseinek megtekintése"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Állások a Blueskynál"
+msgid "See jobs at Eurosky"
+msgstr "Állások a Euroskynál"
 
 #: src/view/screens/SavedFeeds.tsx:205
 msgid "See this guide"
@@ -7167,8 +7167,8 @@ msgid "Share this starter pack"
 msgstr "Kezdőcsomag továbbítása"
 
 #: src/components/StarterPack/ShareDialog.tsx:99
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Oszd meg ezt a kezdőcsomagot, hogy mások is csatlakozhassanak a Blueskyos közösségedhez!"
+msgid "Share this starter pack and help people join your community on Eurosky."
+msgstr "Oszd meg ezt a kezdőcsomagot, hogy mások is csatlakozhassanak a Euroskyos közösségedhez!"
 
 #: src/components/dms/ChatEmptyPill.tsx:34
 msgid "Share your favorite feed!"
@@ -7339,8 +7339,8 @@ msgid "Sign in to account that is not listed"
 msgstr "Bejelentkezés egy másik felhasználói fiókba"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Jelentkezz be vagy hozz létre egy Bluesky-fiókot!"
+msgid "Sign in to Eurosky or create a new account"
+msgstr "Jelentkezz be vagy hozz létre egy Eurosky-fiókot!"
 
 #: src/screens/Settings/Settings.tsx:235
 #: src/screens/Settings/Settings.tsx:237
@@ -7813,8 +7813,8 @@ msgid "The author of this thread has hidden this reply."
 msgstr "A válaszlánc szerzője elrejtette ezt a választ."
 
 #: src/screens/Moderation/index.tsx:377
-msgid "The Bluesky web application"
-msgstr "A Bluesky webalkalmazás"
+msgid "The Eurosky web application"
+msgstr "A Eurosky webalkalmazás"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -7837,8 +7837,8 @@ msgid "The email address you entered is the same as your current email address."
 msgstr "Az új és a régi email-cím megegyezik."
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Az alkalmazás jobb. Töltsd le a Blueskyt és onnan folytatjuk, ahol abbahagytad!"
+msgid "The experience is better in the app. Download Eurosky now and we'll pick back up where you left off."
+msgstr "Az alkalmazás jobb. Töltsd le a Euroskyt és onnan folytatjuk, ahol abbahagytad!"
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -7998,8 +7998,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Váratlan alkalmazáshiba történt. Kérjük jelentsd!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Jelenleg rengeteg új felhasználó csatlakozik a Blueskyhoz. A fiókodat aktiválni fogjuk, amint tudjuk!"
+msgid "There's been a rush of new users to Eurosky! We'll activate your account as soon as we can."
+msgstr "Jelenleg rengeteg új felhasználó csatlakozik a Euroskyhoz. A fiókodat aktiválni fogjuk, amint tudjuk!"
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:62
 msgid "These settings only apply to the Following feed."
@@ -8034,8 +8034,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "A fellebbezés címzettje: <0>{sourceName}</0>."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:104
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Ez a fellebbezés a Bluesky moderálási szolgáltatásához lesz elküldve."
+msgid "This appeal will be sent to Eurosky's moderation service."
+msgstr "Ez a fellebbezés a Eurosky moderálási szolgáltatásához lesz elküldve."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8059,7 +8059,7 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Ez a tartalom jelenleg nem elérhető, mert az egyik kapcsolódó felhasználó letiltotta a másikat."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:114
-msgid "This content is not viewable without a Bluesky account."
+msgid "This content is not viewable without a Eurosky account."
 msgstr "Ezt a tartalmat bejelentkezés nélkül nem tekintheted meg."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
@@ -8130,12 +8130,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Ez a hivatkozás az alábbi honlapra mutat:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Ennek a(z) <0>{0}</0> által létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Bluesky közösségi irányelveit."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Eurosky's community guidelines in its name or description."
+msgstr "Ennek a(z) <0>{0}</0> által létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Eurosky közösségi irányelveit."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Ennek az Általad létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Bluesky közösségi irányelveit."
+msgid "This list – created by you – contains possible violations of Eurosky's community guidelines in its name or description."
+msgstr "Ennek az Általad létrehozott listának a címe vagy leírása lehetséges, hogy megsérti a Eurosky közösségi irányelveit."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -8146,8 +8146,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Ez a moderálási szolgáltatás jelenleg nem elérhető. A részleteket alább olvashatod. Ha a probléma fennáll, lépj velünk kapcsolatba!"
 
 #: src/view/com/post-thread/PostThreadItem.tsx:901
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "A bejegyzés adatai szerint az eredeti létrehozási dátuma <0>{0}</0> volt, de először ekkor jelent meg a Blueskyon: <1>{1}</1>"
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Eurosky on <1>{1}</1>."
+msgstr "A bejegyzés adatai szerint az eredeti létrehozási dátuma <0>{0}</0> volt, de először ekkor jelent meg a Euroskyon: <1>{1}</1>"
 
 #: src/components/WhoCanReply.tsx:217
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -8644,8 +8644,8 @@ msgid "Uploading video..."
 msgstr "Videó feltöltése folyamatban…"
 
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Egy alkalmazásjelszó használatával bármely egyéb Bluesky-kliensbe bejelentkezhetsz, anélkül hogy teljes hozzáférést biztosítanál a fiókodhoz vagy a valódi jelszavadhoz."
+msgid "Use app passwords to sign in to other Eurosky clients without giving full access to your account or password."
+msgstr "Egy alkalmazásjelszó használatával bármely egyéb Eurosky-kliensbe bejelentkezhetsz, anélkül hogy teljes hozzáférést biztosítanál a fiókodhoz vagy a valódi jelszavadhoz."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:558
 msgid "Use default provider"
@@ -8769,8 +8769,8 @@ msgid "Verification Settings"
 msgstr "Hitelesítési beállítások"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "A Bluesky a megszokottól eltérően kezeli a hitelesítéseket. <0>További információ</0>."
+msgid "Verifications on Eurosky work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "A Eurosky a megszokottól eltérően kezeli a hitelesítéseket. <0>További információ</0>."
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9054,8 +9054,8 @@ msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "Küldtünk egy új visszaigazoló emailt a(z) <0>{0}</0> címre."
 
 #: src/screens/Onboarding/StepFinished.tsx:256
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Reméljük, jól érzed magad! Ne feledd; a Bluesky:"
+msgid "We hope you have a wonderful time. Remember, Eurosky is:"
+msgstr "Reméljük, jól érzed magad! Ne feledd; a Eurosky:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -9103,7 +9103,7 @@ msgid "We're having network issues, try again"
 msgstr "Hálózati hiba történt. Próbáld újra!"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
+msgid "We’re introducing a new layer of verification on Eurosky — an easy-to-see checkmark."
 msgstr "Bevezetjük a hitelesítés egy új formáját: egy könnyen látható jelvényt."
 
 #: src/screens/Signup/index.tsx:109
@@ -9386,8 +9386,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Jelenleg nincsenek bejövő csevegési kérelmek."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Még egy meghívókóddal sem rendelkezel. Majd küldünk néhányat, ha már hosszabb ideje leszel a Blueskyon."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Eurosky for a little longer."
+msgstr "Még egy meghívókóddal sem rendelkezel. Majd küldünk néhányat, ha már hosszabb ideje leszel a Euroskyon."
 
 #: src/view/screens/SavedFeeds.tsx:137
 msgid "You don't have any pinned feeds."
@@ -9657,8 +9657,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "A fiókod adattára, ami az összes nyilvános adatodat tartalmazza, letölthető egy „CAR” fájlként. Ez a fájl nem tartalmazza a beágyazott médiatartalmakat (pl.: képeket), sem pedig a személyes adataidat, amit külön kell lekérned."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "A fiókod megsértette a <0>Bluesky Social felhasználási feltételeit</0>. Küldtünk Számodra egy emailt a felfüggesztésed okáról és (adott esetben) hosszáról. Ha úgy gondolod, hogy a felfüggesztés tévedésből történt, lehetőséged van fellebbezni azt."
+msgid "Your account was found to be in violation of the <0>Eurosky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "A fiókod megsértette a <0>Eurosky Social felhasználási feltételeit</0>. Küldtünk Számodra egy emailt a felfüggesztésed okáról és (adott esetben) hosszáról. Ha úgy gondolod, hogy a felfüggesztés tévedésből történt, lehetőséged van fellebbezni azt."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -9696,8 +9696,8 @@ msgid "Your email appears to be invalid."
 msgstr "Az email-címed érvénytelen."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
-msgstr "A Bluesky teljes funkcionalitásának kihasználásához az email-címed visszaigazolása szükséges."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Eurosky."
+msgstr "A Eurosky teljes funkcionalitásának kihasználásához az email-címed visszaigazolása szükséges."
 
 #: src/components/dialogs/VerifyEmailDialog.tsx:110
 msgid "Your email has not yet been verified. This is an important security step which we recommend."
@@ -9765,8 +9765,8 @@ msgid "Your posts, likes, and blocks are public. Mutes are private."
 msgstr "A bejegyzéseid, kedveléseid és letiltásaid nyilvánosak. Az elnémítások nem."
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "A profilod, bejegyzéseid, hírfolyamaid és listáid mostantól el vannak rejtve a többi Bluesky-felhasználó elől. A fiókod újraaktiválásához jelentkezz be!"
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Eurosky users. You can reactivate your account at any time by logging in."
+msgstr "A profilod, bejegyzéseid, hírfolyamaid és listáid mostantól el vannak rejtve a többi Eurosky-felhasználó elől. A fiókod újraaktiválásához jelentkezz be!"
 
 #: src/view/com/composer/Composer.tsx:480
 msgid "Your reply has been published"
@@ -9777,8 +9777,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "A jelentés címzettje: <0>{0}</0>."
 
 #: src/components/dms/ReportDialog.tsx:200
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Ez a jelentés a Bluesky moderálási szolgáltatásának lesz elküldve"
+msgid "Your report will be sent to the Eurosky Moderation Service"
+msgstr "Ez a jelentés a Eurosky moderálási szolgáltatásának lesz elküldve"
 
 #: src/screens/Settings/SettingsInterests.tsx:53
 msgid "Your selected interests help us serve you content you care about."

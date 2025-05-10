@@ -120,7 +120,7 @@ msgstr "{0, plural, other {yeniden gönderi}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, other {{1} gönderi}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Eurosky using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:485
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, other {# kişi}} bu başlangıç paketini kullandı!"
@@ -347,7 +347,7 @@ msgstr ""
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr ""
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Eurosky using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {# kullanıcı}} katıldı!"
@@ -361,12 +361,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, other {# okunmamış öğe}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} Bluesky'a {0} önce katıldı"
+msgid "{profileName} joined Eurosky {0} ago"
+msgstr "{profileName} Eurosky'a {0} önce katıldı"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} Bluesky'a başlangıç paketi kullanarak {0} önce katıldı"
+msgid "{profileName} joined Eurosky using a starter pack {0} ago"
+msgstr "{profileName} Eurosky'a başlangıç paketi kullanarak {0} önce katıldı"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:107
@@ -559,8 +559,8 @@ msgid "Account unmuted"
 msgstr "Hesap susturulması kaldırıldı"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Çıkıntılı onay tikine sahip hesaplar <0><1/></0> başka hesapları doğrulayabilir. Bu güvenilir doğrulayıcılar Bluesky tarafından seçilir."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Eurosky."
+msgstr "Çıkıntılı onay tikine sahip hesaplar <0><1/></0> başka hesapları doğrulayabilir. Bu güvenilir doğrulayıcılar Eurosky tarafından seçilir."
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:169
 #: src/components/dialogs/MutedWords.tsx:328
@@ -881,8 +881,8 @@ msgstr "Video yüklenirken bir hata oluştu."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "Bluesky'ın güvenilir doğrulayıcıları seçmesini ve güvenilir doğrulayıcıların da bireysel hesapları doğrulamasını gösteren bir çizim."
+msgid "An illustration showing that Eurosky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "Eurosky'ın güvenilir doğrulayıcıları seçmesini ve güvenilir doğrulayıcıların da bireysel hesapları doğrulamasını gösteren bir çizim."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -907,8 +907,8 @@ msgid "An issue occurred, please try again."
 msgstr "Bir sorun oluştu, lütfen tekrar deneyin."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Bir kurgu iPhone açık Bluesky uygulamasında doğrulanmış bir kullanıcıyı adının yanındaki doğrulanma tikiyle birlikte gösteriyor."
+msgid "An mockup of a iPhone showing the Eurosky app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Bir kurgu iPhone açık Eurosky uygulamasında doğrulanmış bir kullanıcıyı adının yanındaki doğrulanma tikiyle birlikte gösteriyor."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:185
 msgid "an unknown error occurred"
@@ -933,8 +933,8 @@ msgid "Animated GIF"
 msgstr "Animasyonlu GIF"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Bluesky'da doğrulamayı duyurma"
+msgid "Announcing verification on Eurosky"
+msgstr "Eurosky'da doğrulamayı duyurma"
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1271,54 +1271,54 @@ msgstr "Blog"
 
 #: src/view/com/auth/server-input/index.tsx:136
 #: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
+msgid "Eurosky"
+msgstr "Eurosky"
 
 #: src/view/com/post-thread/PostThreadItem.tsx:915
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "Bluesky iddia edilen tarihin doğruluğunu onaylayamaz."
+msgid "Eurosky cannot confirm the authenticity of the claimed date."
+msgstr "Eurosky iddia edilen tarihin doğruluğunu onaylayamaz."
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:129
 msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Bluesky Klasik™"
+msgid "Eurosky Classic™"
+msgstr "Eurosky Klasik™"
 
 #: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "Bluesky, barındırma sağlayıcınızı seçebileceğiniz açık bir ağdır. Geliştiriciyseniz kendi sunucunuzu barındırabilirsiniz."
+msgid "Eurosky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "Eurosky, barındırma sağlayıcınızı seçebileceğiniz açık bir ağdır. Geliştiriciyseniz kendi sunucunuzu barındırabilirsiniz."
 
 #: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "Bluesky kendi sağlayıcınızı seçebildiğiniz açık bir ağdır. Eğer burada yeniyseniz varsayılan \"Bluesky Social\" seçeneğinde kalmanızı öneririz."
+msgid "Eurosky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Eurosky Social option."
+msgstr "Eurosky kendi sağlayıcınızı seçebildiğiniz açık bir ağdır. Eğer burada yeniyseniz varsayılan \"Eurosky Social\" seçeneğinde kalmanızı öneririz."
 
 #: src/components/ProgressGuide/List.tsx:53
 #: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "Bluesky arkadaşlarla daha güzel!"
+msgid "Eurosky is better with friends!"
+msgstr "Eurosky arkadaşlarla daha güzel!"
 
 #: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "Bluesky Social Kullanım Koşulları"
+msgid "Eurosky Social Terms of Service"
+msgstr "Eurosky Social Kullanım Koşulları"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "Bluesky, ağınızdaki kişilerden bir dizi önerilen hesap seçecektir."
+msgid "Eurosky will choose a set of recommended accounts from people in your network."
+msgstr "Eurosky, ağınızdaki kişilerden bir dizi önerilen hesap seçecektir."
 
 #: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "Bluesky, profilinizi ve gönderilerinizi oturum açmamış kullanıcılara göstermeyecektir. Diğer uygulamalar bu isteği yerine getirmeyebilir. Bu, hesabınızı özel yapmaz."
+msgid "Eurosky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "Eurosky, profilinizi ve gönderilerinizi oturum açmamış kullanıcılara göstermeyecektir. Diğer uygulamalar bu isteği yerine getirmeyebilir. Bu, hesabınızı özel yapmaz."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "Bluesky, kayda değer ve gerçek hesapları inisiyatif alarak doğrulayacaktır."
+msgid "Eurosky will proactively verify notable and authentic accounts."
+msgstr "Eurosky, kayda değer ve gerçek hesapları inisiyatif alarak doğrulayacaktır."
 
 #: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
+msgid "Eurosky+"
+msgstr "Eurosky+"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Bluesky+ simgeleri"
+msgid "Eurosky+ icons"
+msgstr "Eurosky+ simgeleri"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -2221,8 +2221,8 @@ msgid "Customize who can interact with this post."
 msgstr "Bu gönderiyle kimin etkileşime geçebileceğini özelleştirin."
 
 #: src/screens/Onboarding/Layout.tsx:56
-msgid "Customizes your Bluesky experience"
-msgstr "Bluesky deneyiminizi özelleştirir"
+msgid "Customizes your Eurosky experience"
+msgstr "Eurosky deneyiminizi özelleştirir"
 
 #: src/components/dialogs/Embed.tsx:167
 #: src/components/dialogs/Embed.tsx:169
@@ -2613,8 +2613,8 @@ msgid "Double tap to like"
 msgstr "Beğenmek için çift dokunun"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "Bluesky'ı İndir"
+msgid "Download Eurosky"
+msgstr "Eurosky'ı İndir"
 
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
@@ -3389,8 +3389,8 @@ msgid "Find people to follow"
 msgstr "Takip edilecek kişiler bulun"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Bluesky'da gönderileri, kullanıcıları ve akışları bulun"
+msgid "Find posts, users, and feeds on Eurosky"
+msgstr "Eurosky'da gönderileri, kullanıcıları ve akışları bulun"
 
 #: src/screens/StarterPack/Wizard/index.tsx:195
 msgid "Finish"
@@ -4139,7 +4139,7 @@ msgstr "Şu anda yalnızca siz varsınız! Yukarıdan arama yaparak başlangıç
 msgid "Job ID: {0}"
 msgstr "İş ID: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Eurosky
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "İşler"
@@ -4148,8 +4148,8 @@ msgstr "İşler"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:461
 #: src/screens/StarterPack/StarterPackScreen.tsx:472
-msgid "Join Bluesky"
-msgstr "Bluesky'a Katıl"
+msgid "Join Eurosky"
+msgstr "Eurosky'a Katıl"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4232,8 +4232,8 @@ msgid "Learn More"
 msgstr "Daha Fazla Bilgi Edinin"
 
 #: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Bluesky hakkında daha fazlasını öğren"
+msgid "Learn more about Eurosky"
+msgstr "Eurosky hakkında daha fazlasını öğren"
 
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
@@ -4254,13 +4254,13 @@ msgstr "Bu uyarı hakkında daha fazla bilgi edinin"
 
 #: src/components/verification/VerificationsDialog.tsx:150
 #: src/components/verification/VerifierDialog.tsx:117
-msgid "Learn more about verification on Bluesky"
-msgstr "Bluesky'da doğrulama ile ilgili daha fazla bilgi edinin"
+msgid "Learn more about verification on Eurosky"
+msgstr "Eurosky'da doğrulama ile ilgili daha fazla bilgi edinin"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:99
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:102
-msgid "Learn more about what is public on Bluesky."
-msgstr "Bluesky'da neyin herkese açık olduğu hakkında daha fazla bilgi edinin."
+msgid "Learn more about what is public on Eurosky."
+msgstr "Eurosky'da neyin herkese açık olduğu hakkında daha fazla bilgi edinin."
 
 #: src/components/moderation/ContentHider.tsx:239
 #: src/view/com/auth/server-input/index.tsx:220
@@ -4289,8 +4289,8 @@ msgid "Leave them all unchecked to see any language."
 msgstr "Tüm dilleri görmek için hiçbirini seçmeyin."
 
 #: src/view/com/modals/LinkWarning.tsx:65
-msgid "Leaving Bluesky"
-msgstr "Bluesky'dan ayrılıyor"
+msgid "Leaving Eurosky"
+msgstr "Eurosky'dan ayrılıyor"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
@@ -5174,8 +5174,8 @@ msgid "Note about sharing"
 msgstr "Paylaşıma dair dikkatinize"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:88
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Not: Bluesky açık ve kamusal bir ağdır. Bu ayar yalnızca içeriğinizin Bluesky uygulaması ve web sitesindeki görünürlüğünü sınırlar, diğer uygulamalar bu ayarı dikkate almayabilir. İçeriğiniz hala diğer uygulamalar ve web siteleri tarafından çıkış yapan kullanıcılara gösterilebilir."
+msgid "Note: Eurosky is an open and public network. This setting only limits the visibility of your content on the Eurosky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Not: Eurosky açık ve kamusal bir ağdır. Bu ayar yalnızca içeriğinizin Eurosky uygulaması ve web sitesindeki görünürlüğünü sınırlar, diğer uygulamalar bu ayarı dikkate almayabilir. İçeriğiniz hala diğer uygulamalar ve web siteleri tarafından çıkış yapan kullanıcılara gösterilebilir."
 
 #: src/screens/Messages/ChatList.tsx:265
 msgid "Nothing here"
@@ -5438,13 +5438,13 @@ msgstr "Emoji seçiciyi açar"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
-msgstr "Yeni bir Bluesky hesabı oluşturma adımlarını açar"
+msgid "Opens flow to create a new Eurosky account"
+msgstr "Yeni bir Eurosky hesabı oluşturma adımlarını açar"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr "Var olan Bluesky hesabınıza giriş yapma adımlarını açar"
+msgid "Opens flow to sign in to your existing Eurosky account"
+msgstr "Var olan Eurosky hesabınıza giriş yapma adımlarını açar"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
@@ -5535,8 +5535,8 @@ msgid "Our moderation team has received your report."
 msgstr "Moderasyon ekibimiz raporunuzu aldı."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:28
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "Moderatörlerimiz raporları inceledi ve Bluesky'daki sohbetlere erişiminizi engellemeye karar verdi."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Eurosky."
+msgstr "Moderatörlerimiz raporları inceledi ve Eurosky'daki sohbetlere erişiminizi engellemeye karar verdi."
 
 #: src/components/Lists.tsx:190
 #: src/view/screens/NotFound.tsx:47
@@ -5709,7 +5709,7 @@ msgid "Please choose your password."
 msgstr "Şifrenizi seçin."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Eurosky."
 msgstr ""
 
 #: src/screens/Signup/state.ts:301
@@ -6125,18 +6125,18 @@ msgid "Read more"
 msgstr "Devamını oku"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "Bluesky blog'unu oku"
+msgid "Read the Eurosky blog"
+msgstr "Eurosky blog'unu oku"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:58
 #: src/screens/Signup/StepInfo/Policies.tsx:84
-msgid "Read the Bluesky Privacy Policy"
-msgstr "Bluesky Gizlilik Politikasını Oku"
+msgid "Read the Eurosky Privacy Policy"
+msgstr "Eurosky Gizlilik Politikasını Oku"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:51
 #: src/screens/Signup/StepInfo/Policies.tsx:71
-msgid "Read the Bluesky Terms of Service"
-msgstr "Bluesky Hizmet Şartlarını Oku"
+msgid "Read the Eurosky Terms of Service"
+msgstr "Eurosky Hizmet Şartlarını Oku"
 
 #: src/screens/Takendown.tsx:162
 #: src/screens/Takendown.tsx:170
@@ -6865,8 +6865,8 @@ msgid "See #{tag} posts by user"
 msgstr "Kullanıcının #{tag} gönderilerini gör"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Bluesky'daki iş fırsatlarını görün"
+msgid "See jobs at Eurosky"
+msgstr "Eurosky'daki iş fırsatlarını görün"
 
 #: src/view/screens/SavedFeeds.tsx:205
 msgid "See this guide"
@@ -7167,8 +7167,8 @@ msgid "Share this starter pack"
 msgstr "Bu başlangıç paketini paylaş"
 
 #: src/components/StarterPack/ShareDialog.tsx:99
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Bu başlangıç paketini paylaş ve insanların Bluesky'deki topluluğunuza katılmasına yardımcı ol."
+msgid "Share this starter pack and help people join your community on Eurosky."
+msgstr "Bu başlangıç paketini paylaş ve insanların Eurosky'deki topluluğunuza katılmasına yardımcı ol."
 
 #: src/components/dms/ChatEmptyPill.tsx:34
 msgid "Share your favorite feed!"
@@ -7339,8 +7339,8 @@ msgid "Sign in to account that is not listed"
 msgstr "Listelenmeyen bir hesaba giriş yap"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Bluesky'da oturum aç veya yeni bir üyelik oluştur"
+msgid "Sign in to Eurosky or create a new account"
+msgstr "Eurosky'da oturum aç veya yeni bir üyelik oluştur"
 
 #: src/screens/Settings/Settings.tsx:235
 #: src/screens/Settings/Settings.tsx:237
@@ -7811,8 +7811,8 @@ msgid "The author of this thread has hidden this reply."
 msgstr "Bu konunun yazarı bu yanıtı gizlemiş."
 
 #: src/screens/Moderation/index.tsx:377
-msgid "The Bluesky web application"
-msgstr "Bluesky web uygulaması"
+msgid "The Eurosky web application"
+msgstr "Eurosky web uygulaması"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -7835,8 +7835,8 @@ msgid "The email address you entered is the same as your current email address."
 msgstr "Girdiğiniz e-posta adresi şu anki e-posta adresinizle aynıdır."
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Uygulama deneyimi daha iyi. Bluesky'ı şimdi indirin ve kaldığınız yerden devam edelim."
+msgid "The experience is better in the app. Download Eurosky now and we'll pick back up where you left off."
+msgstr "Uygulama deneyimi daha iyi. Eurosky'ı şimdi indirin ve kaldığınız yerden devam edelim."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -7996,8 +7996,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Uygulamada beklenmeyen bir sorun oluştu. Bu size de olduysa lütfen bize bildirin!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Bluesky'e bir dizi yeni kullanıcı geldi! Hesabınızı en kısa sürede etkinleştireceğiz."
+msgid "There's been a rush of new users to Eurosky! We'll activate your account as soon as we can."
+msgstr "Eurosky'e bir dizi yeni kullanıcı geldi! Hesabınızı en kısa sürede etkinleştireceğiz."
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:62
 msgid "These settings only apply to the Following feed."
@@ -8032,8 +8032,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "Bu itiraz <0>{sourceName}</0> hesabına yollanacaktır."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:104
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Bu itiraz Bluesky'ın moderasyon hizmetine gönderilecektir."
+msgid "This appeal will be sent to Eurosky's moderation service."
+msgstr "Bu itiraz Eurosky'ın moderasyon hizmetine gönderilecektir."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8057,8 +8057,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Bu içerik, içerikte yer alan kullanıcılardan biri diğerini engellediği için mevcut değil."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:114
-msgid "This content is not viewable without a Bluesky account."
-msgstr "Bu içerik, bir Bluesky hesabı olmadan görüntülenemez."
+msgid "This content is not viewable without a Eurosky account."
+msgstr "Bu içerik, bir Eurosky hesabı olmadan görüntülenemez."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -8128,12 +8128,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Bu bağlantı sizi aşağıdaki web sitesine götürüyor:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "<0>{0}</0> tarafından oluşturulan bu liste, adında ya da açıklamasında Bluesky topluluk kuralları ihlalleri içeriyor olabilir."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Eurosky's community guidelines in its name or description."
+msgstr "<0>{0}</0> tarafından oluşturulan bu liste, adında ya da açıklamasında Eurosky topluluk kuralları ihlalleri içeriyor olabilir."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Sizin tarafınızdan oluşturulan bu liste, adında ya da açıklamasında Bluesky topluluk kuralları ihlalleri içeriyor olabilir."
+msgid "This list – created by you – contains possible violations of Eurosky's community guidelines in its name or description."
+msgstr "Sizin tarafınızdan oluşturulan bu liste, adında ya da açıklamasında Eurosky topluluk kuralları ihlalleri içeriyor olabilir."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -8144,8 +8144,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Bu moderasyon hizmeti kullanılamıyor. Daha fazla ayrıntı için aşağıya bakın. Bu sorun devam ederse bizimle iletişime geçin."
 
 #: src/view/com/post-thread/PostThreadItem.tsx:901
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "Bu gönderi <0>{0}</0> tarihinde oluşturulduğunu beyan ediyor, ancak Bluesky'da ilk olarak <1>{1}</1> tarihinde görüldü."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Eurosky on <1>{1}</1>."
+msgstr "Bu gönderi <0>{0}</0> tarihinde oluşturulduğunu beyan ediyor, ancak Eurosky'da ilk olarak <1>{1}</1> tarihinde görüldü."
 
 #: src/components/WhoCanReply.tsx:217
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -8642,8 +8642,8 @@ msgid "Uploading video..."
 msgstr "Video yükleniyor..."
 
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Hesabınıza veya şifrenize tam erişim vermeden diğer Bluesky istemcilerine giriş yapmak için uygulama şifrelerini kullanın."
+msgid "Use app passwords to sign in to other Eurosky clients without giving full access to your account or password."
+msgstr "Hesabınıza veya şifrenize tam erişim vermeden diğer Eurosky istemcilerine giriş yapmak için uygulama şifrelerini kullanın."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:558
 msgid "Use default provider"
@@ -8767,8 +8767,8 @@ msgid "Verification Settings"
 msgstr "Doğrulama Ayarları"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "Bluesky'daki doğrulamalar diğer platformlardan farklı çalışır. <0>Buradan daha fazlasını öğrenin.</0>"
+msgid "Verifications on Eurosky work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "Eurosky'daki doğrulamalar diğer platformlardan farklı çalışır. <0>Buradan daha fazlasını öğrenin.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9052,8 +9052,8 @@ msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "<0>{0}</0> adresine başka bir doğrulama e-postası gönderdik."
 
 #: src/screens/Onboarding/StepFinished.tsx:256
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Harika vakit geçirmenizi umuyoruz. Unutmayın, Bluesky:"
+msgid "We hope you have a wonderful time. Remember, Eurosky is:"
+msgstr "Harika vakit geçirmenizi umuyoruz. Unutmayın, Eurosky:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -9101,8 +9101,8 @@ msgid "We're having network issues, try again"
 msgstr "Ağ sorunları yaşıyoruz, tekrar deneyin"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr "Bluesky'da yeni bir doğrulama katmanı sunuyoruz - kolay görülebilen bir onay işareti."
+msgid "We’re introducing a new layer of verification on Eurosky — an easy-to-see checkmark."
+msgstr "Eurosky'da yeni bir doğrulama katmanı sunuyoruz - kolay görülebilen bir onay işareti."
 
 #: src/screens/Signup/index.tsx:109
 msgid "We're so excited to have you join us!"
@@ -9384,8 +9384,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Şu anda herhangi bir sohbet isteğiniz yok."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Henüz hiç davet kodunuz yok! Bluesky'de biraz daha uzun süre kaldıktan sonra size bazı kodlar göndereceğiz."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Eurosky for a little longer."
+msgstr "Henüz hiç davet kodunuz yok! Eurosky'de biraz daha uzun süre kaldıktan sonra size bazı kodlar göndereceğiz."
 
 #: src/view/screens/SavedFeeds.tsx:137
 msgid "You don't have any pinned feeds."
@@ -9655,8 +9655,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "Herkese açık tüm veri kayıtlarınızı içeren hesap deponuz bir \"CAR\" dosyası olarak indirilebilir. Bu dosya görselleri, özel verilerinizi veya gömülü medyayı içermez; onların ayrıca indirilmeleri gerekir."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "Hesabınızın <0>Bluesky Social Hizmet Şartları</0>'nı ihlal ettiği tespit edildi. Size, varsa belirli ihlali ve askıya alma süresini özetleyen bir e-posta gönderildi. Hatalı olduğuna inanıyorsanız bu karara itiraz edebilirsiniz."
+msgid "Your account was found to be in violation of the <0>Eurosky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "Hesabınızın <0>Eurosky Social Hizmet Şartları</0>'nı ihlal ettiği tespit edildi. Size, varsa belirli ihlali ve askıya alma süresini özetleyen bir e-posta gönderildi. Hatalı olduğuna inanıyorsanız bu karara itiraz edebilirsiniz."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -9694,7 +9694,7 @@ msgid "Your email appears to be invalid."
 msgstr "E-postanız geçersiz gibi görünüyor."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Eurosky."
 msgstr ""
 
 #: src/components/dialogs/VerifyEmailDialog.tsx:110
@@ -9763,8 +9763,8 @@ msgid "Your posts, likes, and blocks are public. Mutes are private."
 msgstr "Gönderileriniz, beğenileriniz ve engellemeleriniz herkese açıktır. Sessizlikleriniz özeldir."
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "Profiliniz, gönderileriniz, akışlarınız ve listeleriniz artık diğer Bluesky kullanıcıları tarafından görülemeyecek. Hesabınızı istediğiniz zaman oturum açarak yeniden etkinleştirebilirsiniz."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Eurosky users. You can reactivate your account at any time by logging in."
+msgstr "Profiliniz, gönderileriniz, akışlarınız ve listeleriniz artık diğer Eurosky kullanıcıları tarafından görülemeyecek. Hesabınızı istediğiniz zaman oturum açarak yeniden etkinleştirebilirsiniz."
 
 #: src/view/com/composer/Composer.tsx:480
 msgid "Your reply has been published"
@@ -9775,8 +9775,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "Raporunuz <0>{0}</0> işaretleyicisine gönderilecektir."
 
 #: src/components/dms/ReportDialog.tsx:200
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Raporunuz Bluesky Moderasyon Hizmetine gönderilecektir"
+msgid "Your report will be sent to the Eurosky Moderation Service"
+msgstr "Raporunuz Eurosky Moderasyon Hizmetine gönderilecektir"
 
 #: src/screens/Settings/SettingsInterests.tsx:53
 msgid "Your selected interests help us serve you content you care about."

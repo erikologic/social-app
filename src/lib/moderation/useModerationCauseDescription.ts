@@ -139,7 +139,7 @@ export function useModerationCauseDescription(
       if (!source) {
         if (cause.label.src === BSKY_LABELER_DID) {
           source = 'moderation.bsky.app'
-          sourceDisplayName = 'Bluesky Moderation Service'
+          sourceDisplayName = 'Eurosky Moderation Service'
         } else {
           source = _(msg`an unknown labeler`)
         }

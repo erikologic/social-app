@@ -120,7 +120,7 @@ msgstr "{0, plural, other {lượt đăng lại}}"
 msgid "{0, plural, other {{1} posts}}"
 msgstr "{0, plural, other {{1} bài đăng}}"
 
-#. Number of users (always at least 25) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 25) who have joined Eurosky using a specific starter pack
 #: src/screens/StarterPack/StarterPackScreen.tsx:485
 msgid "{0, plural, other {# people have}} used this starter pack!"
 msgstr "{0, plural, other {# người dùng}} đã dùng gói khởi đầu này!"
@@ -347,7 +347,7 @@ msgstr ""
 msgid "{hours, plural, one {# hour} other {# hours}}"
 msgstr ""
 
-#. Number of users (always at least 50) who have joined Bluesky using a specific starter pack
+#. Number of users (always at least 50) who have joined Eurosky using a specific starter pack
 #: src/components/StarterPack/StarterPackCard.tsx:101
 msgid "{joinedAllTimeCount, plural, other {# users have}} joined!"
 msgstr "{joinedAllTimeCount, plural, other {# người dùng}} đã đăng ký!"
@@ -361,12 +361,12 @@ msgid "{notificationCount, plural, one {# unread item} other {# unread items}}"
 msgstr "{notificationCount, plural, other {# mục chưa đọc}}"
 
 #: src/components/NewskieDialog.tsx:116
-msgid "{profileName} joined Bluesky {0} ago"
-msgstr "{profileName} đã tham gia Bluesky {0} trước"
+msgid "{profileName} joined Eurosky {0} ago"
+msgstr "{profileName} đã tham gia Eurosky {0} trước"
 
 #: src/components/NewskieDialog.tsx:111
-msgid "{profileName} joined Bluesky using a starter pack {0} ago"
-msgstr "{profileName} đã tham gia Bluesky bằng gói khởi đầu {0} trước"
+msgid "{profileName} joined Eurosky using a starter pack {0} ago"
+msgstr "{profileName} đã tham gia Eurosky bằng gói khởi đầu {0} trước"
 
 #. The trending topic rank, i.e. "1. March Madness", "2. The Bachelor"
 #: src/screens/Search/modules/ExploreTrendingTopics.tsx:107
@@ -559,8 +559,8 @@ msgid "Account unmuted"
 msgstr "Tài khoản đã được bật lại thông báo"
 
 #: src/components/verification/VerifierDialog.tsx:96
-msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Bluesky."
-msgstr "Tài khoản có dấu tích xanh hình viền răng cưa <0><1/></0> có thể xác minh người khác. Những người xác minh đáng tin cậy này được chọn bởi Bluesky."
+msgid "Accounts with a scalloped blue check mark <0><1/></0> can verify others. These trusted verifiers are selected by Eurosky."
+msgstr "Tài khoản có dấu tích xanh hình viền răng cưa <0><1/></0> có thể xác minh người khác. Những người xác minh đáng tin cậy này được chọn bởi Eurosky."
 
 #: src/components/dialogs/lists/ListAddRemoveUsersDialog.tsx:169
 #: src/components/dialogs/MutedWords.tsx:328
@@ -881,8 +881,8 @@ msgstr "Đã có lỗi xảy ra khi đang tải lên video."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:84
 #: src/components/verification/VerifierDialog.tsx:86
-msgid "An illustration showing that Bluesky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
-msgstr "Một hình vẽ cho thấy Bluesky chọn người xác minh đáng tin cậy, và rồi những người xác minh đáng tin cậy này xác minh từng tài khoản cá nhân khác."
+msgid "An illustration showing that Eurosky selects trusted verifiers, and trusted verifiers in turn verify individual user accounts."
+msgstr "Một hình vẽ cho thấy Eurosky chọn người xác minh đáng tin cậy, và rồi những người xác minh đáng tin cậy này xác minh từng tài khoản cá nhân khác."
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:28
 #: src/lib/moderation/useReportOptions.ts:28
@@ -907,8 +907,8 @@ msgid "An issue occurred, please try again."
 msgstr "Có vấn đề xảy ra, vui lòng thử lại."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:118
-msgid "An mockup of a iPhone showing the Bluesky app open to the profile of a verified user with a blue checkmark next to their display name."
-msgstr "Phác thảo một iPhone hiển thị ứng dụng Bluesky mở trang hồ sơ của một người dùng đã được xác minh với dấu tích xanh ngay cạnh tên hiển thị."
+msgid "An mockup of a iPhone showing the Eurosky app open to the profile of a verified user with a blue checkmark next to their display name."
+msgstr "Phác thảo một iPhone hiển thị ứng dụng Eurosky mở trang hồ sơ của một người dùng đã được xác minh với dấu tích xanh ngay cạnh tên hiển thị."
 
 #: src/screens/Onboarding/StepInterests/index.tsx:185
 msgid "an unknown error occurred"
@@ -933,8 +933,8 @@ msgid "Animated GIF"
 msgstr "GIF động"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:37
-msgid "Announcing verification on Bluesky"
-msgstr "Giới thiệu xác minh trên Bluesky"
+msgid "Announcing verification on Eurosky"
+msgstr "Giới thiệu xác minh trên Eurosky"
 
 #: src/components/moderation/ReportDialog/utils/useReportOptions.ts:33
 #: src/lib/moderation/useReportOptions.ts:33
@@ -1271,54 +1271,54 @@ msgstr "Blog"
 
 #: src/view/com/auth/server-input/index.tsx:136
 #: src/view/com/auth/server-input/index.tsx:137
-msgid "Bluesky"
-msgstr "Bluesky"
+msgid "Eurosky"
+msgstr "Eurosky"
 
 #: src/view/com/post-thread/PostThreadItem.tsx:915
-msgid "Bluesky cannot confirm the authenticity of the claimed date."
-msgstr "Bluesky không thể xác nhận tính xác thực của ngày được tuyên bố."
+msgid "Eurosky cannot confirm the authenticity of the claimed date."
+msgstr "Eurosky không thể xác nhận tính xác thực của ngày được tuyên bố."
 
 #: src/screens/Settings/AppIconSettings/useAppIconSets.ts:129
 msgctxt "Name of app icon variant"
-msgid "Bluesky Classic™"
-msgstr "Bluesky Classic™"
+msgid "Eurosky Classic™"
+msgstr "Eurosky Classic™"
 
 #: src/view/com/auth/server-input/index.tsx:212
-msgid "Bluesky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
-msgstr "Bluesky là mạng mở nơi bạn có thể chọn nhà cung cấp dịch vụ lưu trữ của mình. Nếu bạn là nhà phát triển, bạn có thể tự lưu trữ máy chủ của mình."
+msgid "Eurosky is an open network where you can choose your hosting provider. If you're a developer, you can host your own server."
+msgstr "Eurosky là mạng mở nơi bạn có thể chọn nhà cung cấp dịch vụ lưu trữ của mình. Nếu bạn là nhà phát triển, bạn có thể tự lưu trữ máy chủ của mình."
 
 #: src/view/com/auth/server-input/index.tsx:149
-msgid "Bluesky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Bluesky Social option."
-msgstr "Bluesky là một mạng xã hội mở, nơi bạn có thể tự chọn nơi quản lý tài khoản của mình. Nếu bạn mới tham gia, chúng tôi khuyên bạn nên sử dụng tùy chọn mặc định là Bluesky Social."
+msgid "Eurosky is an open network where you can choose your own provider. If you're new here, we recommend sticking with the default Eurosky Social option."
+msgstr "Eurosky là một mạng xã hội mở, nơi bạn có thể tự chọn nơi quản lý tài khoản của mình. Nếu bạn mới tham gia, chúng tôi khuyên bạn nên sử dụng tùy chọn mặc định là Eurosky Social."
 
 #: src/components/ProgressGuide/List.tsx:53
 #: src/components/ProgressGuide/List.tsx:70
-msgid "Bluesky is better with friends!"
-msgstr "Bluesky cùng bạn bè sẽ vui hơn!"
+msgid "Eurosky is better with friends!"
+msgstr "Eurosky cùng bạn bè sẽ vui hơn!"
 
 #: src/screens/Takendown.tsx:217
-msgid "Bluesky Social Terms of Service"
-msgstr "Điều khoản Dịch vụ của Bluesky Social"
+msgid "Eurosky Social Terms of Service"
+msgstr "Điều khoản Dịch vụ của Eurosky Social"
 
 #: src/components/StarterPack/ProfileStarterPacks.tsx:310
-msgid "Bluesky will choose a set of recommended accounts from people in your network."
-msgstr "Bluesky sẽ chọn một tập hợp các tài khoản được đề xuất từ những người trong mạng lưới của bạn."
+msgid "Eurosky will choose a set of recommended accounts from people in your network."
+msgstr "Eurosky sẽ chọn một tập hợp các tài khoản được đề xuất từ những người trong mạng lưới của bạn."
 
 #: src/screens/Settings/components/PwiOptOut.tsx:99
-msgid "Bluesky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
-msgstr "Bluesky sẽ không hiển thị hồ sơ và bài đăng của bạn cho người dùng không đăng nhập. Các ứng dụng khác có thể không tuân thủ yêu cầu này. Việc này không giúp tài khoản của bạn bảo mật."
+msgid "Eurosky will not show your profile and posts to logged-out users. Other apps may not honor this request. This does not make your account private."
+msgstr "Eurosky sẽ không hiển thị hồ sơ và bài đăng của bạn cho người dùng không đăng nhập. Các ứng dụng khác có thể không tuân thủ yêu cầu này. Việc này không giúp tài khoản của bạn bảo mật."
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:132
-msgid "Bluesky will proactively verify notable and authentic accounts."
-msgstr "Bluesky sẽ chủ động xác thực các tài khoản nổi bật và đáng tin."
+msgid "Eurosky will proactively verify notable and authentic accounts."
+msgstr "Eurosky sẽ chủ động xác thực các tài khoản nổi bật và đáng tin."
 
 #: src/screens/Settings/AppIconSettings/index.tsx:99
-msgid "Bluesky+"
-msgstr "Bluesky+"
+msgid "Eurosky+"
+msgstr "Eurosky+"
 
 #: src/screens/Settings/AppIconSettings/index.tsx:102
-msgid "Bluesky+ icons"
-msgstr "Biểu tượng Bluesky+"
+msgid "Eurosky+ icons"
+msgstr "Biểu tượng Eurosky+"
 
 #: src/lib/moderation/useLabelBehaviorDescription.ts:53
 msgid "Blur images"
@@ -2221,8 +2221,8 @@ msgid "Customize who can interact with this post."
 msgstr "Tùy chỉnh ai có thể tương tác với bài đăng này."
 
 #: src/screens/Onboarding/Layout.tsx:56
-msgid "Customizes your Bluesky experience"
-msgstr "Tuỳ biến trải nghiệm Bluesky của bạn"
+msgid "Customizes your Eurosky experience"
+msgstr "Tuỳ biến trải nghiệm Eurosky của bạn"
 
 #: src/components/dialogs/Embed.tsx:167
 #: src/components/dialogs/Embed.tsx:169
@@ -2613,8 +2613,8 @@ msgid "Double tap to like"
 msgstr "Chạm hai lần để thích"
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:321
-msgid "Download Bluesky"
-msgstr "Tải Bluesky"
+msgid "Download Eurosky"
+msgstr "Tải Eurosky"
 
 #: src/screens/Settings/components/ExportCarDialog.tsx:79
 #: src/screens/Settings/components/ExportCarDialog.tsx:84
@@ -3389,8 +3389,8 @@ msgid "Find people to follow"
 msgstr "Tìm người để theo dõi"
 
 #: src/screens/Search/Shell.tsx:476
-msgid "Find posts, users, and feeds on Bluesky"
-msgstr "Tìm bài đăng, người dùng, và bảng tin trên Bluesky"
+msgid "Find posts, users, and feeds on Eurosky"
+msgstr "Tìm bài đăng, người dùng, và bảng tin trên Eurosky"
 
 #: src/screens/StarterPack/Wizard/index.tsx:195
 msgid "Finish"
@@ -4139,7 +4139,7 @@ msgstr "Chỉ mới có bạn thôi! Thêm người khác vào gói khởi đầ
 msgid "Job ID: {0}"
 msgstr "ID công việc: {0}"
 
-#. Link to a page with job openings at Bluesky
+#. Link to a page with job openings at Eurosky
 #: src/view/com/auth/SplashScreen.web.tsx:180
 msgid "Jobs"
 msgstr "Công việc"
@@ -4148,8 +4148,8 @@ msgstr "Công việc"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:461
 #: src/screens/StarterPack/StarterPackScreen.tsx:472
-msgid "Join Bluesky"
-msgstr "Tham gia Bluesky"
+msgid "Join Eurosky"
+msgstr "Tham gia Eurosky"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
@@ -4232,8 +4232,8 @@ msgid "Learn More"
 msgstr "Tìm hiểu thêm"
 
 #: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Tìm hiểu thêm về Bluesky"
+msgid "Learn more about Eurosky"
+msgstr "Tìm hiểu thêm về Eurosky"
 
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
@@ -4254,13 +4254,13 @@ msgstr "Tìm hiểu thêm về cảnh báo này"
 
 #: src/components/verification/VerificationsDialog.tsx:150
 #: src/components/verification/VerifierDialog.tsx:117
-msgid "Learn more about verification on Bluesky"
-msgstr "Tìm hiểu thêm về xác minh trên Bluesky"
+msgid "Learn more about verification on Eurosky"
+msgstr "Tìm hiểu thêm về xác minh trên Eurosky"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:99
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:102
-msgid "Learn more about what is public on Bluesky."
-msgstr "Tìm hiểu thêm về những gì công khai trên Bluesky."
+msgid "Learn more about what is public on Eurosky."
+msgstr "Tìm hiểu thêm về những gì công khai trên Eurosky."
 
 #: src/components/moderation/ContentHider.tsx:239
 #: src/view/com/auth/server-input/index.tsx:220
@@ -4289,8 +4289,8 @@ msgid "Leave them all unchecked to see any language."
 msgstr "Bỏ chọn tất cả để xem bất kỳ ngôn ngữ nào."
 
 #: src/view/com/modals/LinkWarning.tsx:65
-msgid "Leaving Bluesky"
-msgstr "Rời Bluesky"
+msgid "Leaving Eurosky"
+msgstr "Rời Eurosky"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
@@ -5174,8 +5174,8 @@ msgid "Note about sharing"
 msgstr "Chú ý về việc chia sẻ"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:88
-msgid "Note: Bluesky is an open and public network. This setting only limits the visibility of your content on the Bluesky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
-msgstr "Chú ý: Bluesky là một trang mạng mở và công khai. Cài đặt này chỉ giới hạn trạng thái hiển thị nội dung của bạn trên ứng dụng và trang web Bluesky, các ứng dụng khác có thể không tôn trọng cài đặt này. Nội dung của bạn vẫn có thể được hiển thị bởi các ứng dụng và trang web khác cho người dùng sau đăng xuất."
+msgid "Note: Eurosky is an open and public network. This setting only limits the visibility of your content on the Eurosky app and website, and other apps may not respect this setting. Your content may still be shown to logged-out users by other apps and websites."
+msgstr "Chú ý: Eurosky là một trang mạng mở và công khai. Cài đặt này chỉ giới hạn trạng thái hiển thị nội dung của bạn trên ứng dụng và trang web Eurosky, các ứng dụng khác có thể không tôn trọng cài đặt này. Nội dung của bạn vẫn có thể được hiển thị bởi các ứng dụng và trang web khác cho người dùng sau đăng xuất."
 
 #: src/screens/Messages/ChatList.tsx:265
 msgid "Nothing here"
@@ -5438,13 +5438,13 @@ msgstr "Mở trình chọn emoji"
 
 #: src/view/com/auth/SplashScreen.tsx:49
 #: src/view/com/auth/SplashScreen.web.tsx:111
-msgid "Opens flow to create a new Bluesky account"
-msgstr "Mở quy trình tạo tài khoản Bluesky mới"
+msgid "Opens flow to create a new Eurosky account"
+msgstr "Mở quy trình tạo tài khoản Eurosky mới"
 
 #: src/view/com/auth/SplashScreen.tsx:63
 #: src/view/com/auth/SplashScreen.web.tsx:125
-msgid "Opens flow to sign in to your existing Bluesky account"
-msgstr "Mở quy trình đăng nhập vào tài khoản Bluesky hiện tại của bạn"
+msgid "Opens flow to sign in to your existing Eurosky account"
+msgstr "Mở quy trình đăng nhập vào tài khoản Eurosky hiện tại của bạn"
 
 #: src/view/com/composer/photos/SelectGifBtn.tsx:36
 msgid "Opens GIF select dialog"
@@ -5535,8 +5535,8 @@ msgid "Our moderation team has received your report."
 msgstr "Đội ngũ kiểm duyệt của chúng tôi đã nhận được báo cáo của bạn."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:28
-msgid "Our moderators have reviewed reports and decided to disable your access to chats on Bluesky."
-msgstr "Kiểm duyệt viên của chúng tôi đã xem xét các báo cáo và quyết định vô hiệu hóa quyền truy cập chat của bạn trên Bluesky."
+msgid "Our moderators have reviewed reports and decided to disable your access to chats on Eurosky."
+msgstr "Kiểm duyệt viên của chúng tôi đã xem xét các báo cáo và quyết định vô hiệu hóa quyền truy cập chat của bạn trên Eurosky."
 
 #: src/components/Lists.tsx:190
 #: src/view/screens/NotFound.tsx:47
@@ -5709,7 +5709,7 @@ msgid "Please choose your password."
 msgstr "Vui lòng chọn mật khẩu."
 
 #: src/components/dialogs/EmailDialog/screens/Update.tsx:290
-msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Bluesky."
+msgid "Please click on the link in the email we just sent you to verify your new email address. This is an important step to allow you to continue enjoying all the features of Eurosky."
 msgstr ""
 
 #: src/screens/Signup/state.ts:301
@@ -6125,18 +6125,18 @@ msgid "Read more"
 msgstr "Xem thêm"
 
 #: src/view/com/auth/SplashScreen.web.tsx:173
-msgid "Read the Bluesky blog"
-msgstr "Đọc blog của Bluesky"
+msgid "Read the Eurosky blog"
+msgstr "Đọc blog của Eurosky"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:58
 #: src/screens/Signup/StepInfo/Policies.tsx:84
-msgid "Read the Bluesky Privacy Policy"
-msgstr "Đọc Chính sách bảo mật của Bluesky"
+msgid "Read the Eurosky Privacy Policy"
+msgstr "Đọc Chính sách bảo mật của Eurosky"
 
 #: src/screens/Signup/StepInfo/Policies.tsx:51
 #: src/screens/Signup/StepInfo/Policies.tsx:71
-msgid "Read the Bluesky Terms of Service"
-msgstr "Đọc Điều khoản dịch vụ của Bluesky"
+msgid "Read the Eurosky Terms of Service"
+msgstr "Đọc Điều khoản dịch vụ của Eurosky"
 
 #: src/screens/Takendown.tsx:162
 #: src/screens/Takendown.tsx:170
@@ -6865,8 +6865,8 @@ msgid "See #{tag} posts by user"
 msgstr "Xem bài đăng #{tag} từ người dùng"
 
 #: src/view/com/auth/SplashScreen.web.tsx:178
-msgid "See jobs at Bluesky"
-msgstr "Xem công việc tại Bluesky"
+msgid "See jobs at Eurosky"
+msgstr "Xem công việc tại Eurosky"
 
 #: src/view/screens/SavedFeeds.tsx:205
 msgid "See this guide"
@@ -7167,8 +7167,8 @@ msgid "Share this starter pack"
 msgstr "Chia sẻ gói khởi đầu này"
 
 #: src/components/StarterPack/ShareDialog.tsx:99
-msgid "Share this starter pack and help people join your community on Bluesky."
-msgstr "Chia sẻ gói khởi đầu này và giúp mọi người tham gia cộng đồng của bạn trên Bluesky."
+msgid "Share this starter pack and help people join your community on Eurosky."
+msgstr "Chia sẻ gói khởi đầu này và giúp mọi người tham gia cộng đồng của bạn trên Eurosky."
 
 #: src/components/dms/ChatEmptyPill.tsx:34
 msgid "Share your favorite feed!"
@@ -7339,8 +7339,8 @@ msgid "Sign in to account that is not listed"
 msgstr "Đăng nhập vào tải khoản chưa được liệt kê"
 
 #: src/components/dialogs/Signin.tsx:46
-msgid "Sign in to Bluesky or create a new account"
-msgstr "Đăng nhập vào Bluesky hoặc tạo tài khoản mới"
+msgid "Sign in to Eurosky or create a new account"
+msgstr "Đăng nhập vào Eurosky hoặc tạo tài khoản mới"
 
 #: src/screens/Settings/Settings.tsx:235
 #: src/screens/Settings/Settings.tsx:237
@@ -7811,8 +7811,8 @@ msgid "The author of this thread has hidden this reply."
 msgstr "Tác giả thảo luận này đã ẩn trả lời này."
 
 #: src/screens/Moderation/index.tsx:377
-msgid "The Bluesky web application"
-msgstr "Ứng dụng web Bluesky"
+msgid "The Eurosky web application"
+msgstr "Ứng dụng web Eurosky"
 
 #: src/view/screens/CommunityGuidelines.tsx:38
 msgid "The Community Guidelines have been moved to <0/>"
@@ -7835,8 +7835,8 @@ msgid "The email address you entered is the same as your current email address."
 msgstr "Địa chỉ email bạn vừa nhập là địa chỉ email hiện tại của bạn."
 
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:324
-msgid "The experience is better in the app. Download Bluesky now and we'll pick back up where you left off."
-msgstr "Trải nghiệm tốt hơn bằng ứng dụng. Tải Bluesky bây giờ và tiếp tục hành trình đang dở của bạn."
+msgid "The experience is better in the app. Download Eurosky now and we'll pick back up where you left off."
+msgstr "Trải nghiệm tốt hơn bằng ứng dụng. Tải Eurosky bây giờ và tiếp tục hành trình đang dở của bạn."
 
 #: src/view/com/posts/FeedShutdownMsg.tsx:67
 msgid "The feed has been replaced with Discover."
@@ -7996,8 +7996,8 @@ msgid "There was an unexpected issue in the application. Please let us know if t
 msgstr "Đã xảy ra một vấn đề không mong muốn trong ứng dụng. Vui lòng cho chúng tôi biết nếu điều này xảy ra với bạn!"
 
 #: src/screens/SignupQueued.tsx:130
-msgid "There's been a rush of new users to Bluesky! We'll activate your account as soon as we can."
-msgstr "Có một lượng lớn người dùng mới đến Bluesky! Chúng tôi sẽ kích hoạt tài khoản của bạn ngay khi có thể."
+msgid "There's been a rush of new users to Eurosky! We'll activate your account as soon as we can."
+msgstr "Có một lượng lớn người dùng mới đến Eurosky! Chúng tôi sẽ kích hoạt tài khoản của bạn ngay khi có thể."
 
 #: src/screens/Settings/FollowingFeedPreferences.tsx:62
 msgid "These settings only apply to the Following feed."
@@ -8032,8 +8032,8 @@ msgid "This appeal will be sent to <0>{sourceName}</0>."
 msgstr "Kháng nghị này sẽ được gởi đến <0>{sourceName}</0>."
 
 #: src/screens/Messages/components/ChatDisabled.tsx:104
-msgid "This appeal will be sent to Bluesky's moderation service."
-msgstr "Kháng nghị này sẽ được gởi đến dịch vụ kiểm duyệt của Bluesky."
+msgid "This appeal will be sent to Eurosky's moderation service."
+msgstr "Kháng nghị này sẽ được gởi đến dịch vụ kiểm duyệt của Eurosky."
 
 #: src/screens/Messages/components/MessageListError.tsx:18
 msgid "This chat was disconnected"
@@ -8057,8 +8057,8 @@ msgid "This content is not available because one of the users involved has block
 msgstr "Nội dung này không có hiệu lực vì một trong số người dùng liên quan đã chặn người còn lại."
 
 #: src/view/com/posts/PostFeedErrorMessage.tsx:114
-msgid "This content is not viewable without a Bluesky account."
-msgstr "Không thể xem nội dung này nếu không có tài khoản Bluesky."
+msgid "This content is not viewable without a Eurosky account."
+msgstr "Không thể xem nội dung này nếu không có tài khoản Eurosky."
 
 #: src/screens/Messages/components/ChatListItem.tsx:362
 msgid "This conversation is with a deleted or a deactivated account. Press for options"
@@ -8128,12 +8128,12 @@ msgid "This link is taking you to the following website:"
 msgstr "Liên kết này dẫn bạn đến trang web sau đây:"
 
 #: src/screens/List/ListHiddenScreen.tsx:151
-msgid "This list – created by <0>{0}</0> – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Danh sách này – tạo bởi <0>{0}</0> – có thể chứa các vi phạm tiều chuẩn cộng đồng của Bluesky trong tên hoặc mô tả của nó."
+msgid "This list – created by <0>{0}</0> – contains possible violations of Eurosky's community guidelines in its name or description."
+msgstr "Danh sách này – tạo bởi <0>{0}</0> – có thể chứa các vi phạm tiều chuẩn cộng đồng của Eurosky trong tên hoặc mô tả của nó."
 
 #: src/screens/List/ListHiddenScreen.tsx:146
-msgid "This list – created by you – contains possible violations of Bluesky's community guidelines in its name or description."
-msgstr "Danh sách này của bạn tạo có thể chứa vi phạm nguyên tắc cộng đồng của Bluesky trong tên hoặc mô tả của nó."
+msgid "This list – created by you – contains possible violations of Eurosky's community guidelines in its name or description."
+msgstr "Danh sách này của bạn tạo có thể chứa vi phạm nguyên tắc cộng đồng của Eurosky trong tên hoặc mô tả của nó."
 
 #: src/view/screens/ProfileList.tsx:962
 msgid "This list is empty."
@@ -8144,8 +8144,8 @@ msgid "This moderation service is unavailable. See below for more details. If th
 msgstr "Dịch vụ kiểm duyệt này không khả dụng. Xem bên dưới để biết thêm chi tiết. Nếu vấn đề này vẫn tiếp tục, hãy liên hệ với chúng tôi."
 
 #: src/view/com/post-thread/PostThreadItem.tsx:901
-msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Bluesky on <1>{1}</1>."
-msgstr "Bài đăng này khai rằng đã được tạo vào <0>{0}</0>, nhưng lần đầu tiên được Bluesky nhìn thấy vào <1>{1}</1>."
+msgid "This post claims to have been created on <0>{0}</0>, but was first seen by Eurosky on <1>{1}</1>."
+msgstr "Bài đăng này khai rằng đã được tạo vào <0>{0}</0>, nhưng lần đầu tiên được Eurosky nhìn thấy vào <1>{1}</1>."
 
 #: src/components/WhoCanReply.tsx:217
 msgid "This post has an unknown type of threadgate on it. Your app may be out of date."
@@ -8642,8 +8642,8 @@ msgid "Uploading video..."
 msgstr "Đang tải lên video..."
 
 #: src/screens/Settings/AppPasswords.tsx:67
-msgid "Use app passwords to sign in to other Bluesky clients without giving full access to your account or password."
-msgstr "Sử dụng mật khẩu ứng dụng để đăng nhập vào các ứng dụng Bluesky khác mà không cần cung cấp quyền truy cập đầy đủ vào tài khoản hoặc mật khẩu của bạn."
+msgid "Use app passwords to sign in to other Eurosky clients without giving full access to your account or password."
+msgstr "Sử dụng mật khẩu ứng dụng để đăng nhập vào các ứng dụng Eurosky khác mà không cần cung cấp quyền truy cập đầy đủ vào tài khoản hoặc mật khẩu của bạn."
 
 #: src/screens/Settings/components/ChangeHandleDialog.tsx:558
 msgid "Use default provider"
@@ -8767,8 +8767,8 @@ msgid "Verification Settings"
 msgstr "Cài đặt xác minh"
 
 #: src/screens/Moderation/VerificationSettings.tsx:41
-msgid "Verifications on Bluesky work differently than on other platforms. <0>Learn more here.</0>"
-msgstr "Xác minh trên Bluesky hoạt động không giống với các nền tảng khác. <0>Tìm hiểu thêm tại đây.</0>"
+msgid "Verifications on Eurosky work differently than on other platforms. <0>Learn more here.</0>"
+msgstr "Xác minh trên Eurosky hoạt động không giống với các nền tảng khác. <0>Tìm hiểu thêm tại đây.</0>"
 
 #: src/components/verification/VerificationsDialog.tsx:103
 msgid "Verified by:"
@@ -9052,8 +9052,8 @@ msgid "We have sent another verification email to <0>{0}</0>."
 msgstr "Chúng tôi đã gởi một email xác minh khác đến <0>{0}</0>."
 
 #: src/screens/Onboarding/StepFinished.tsx:256
-msgid "We hope you have a wonderful time. Remember, Bluesky is:"
-msgstr "Chúng tôi mong bạn có một trải nghiệm tuyệt vời. Hãy nhớ rằng, Bluesky là:"
+msgid "We hope you have a wonderful time. Remember, Eurosky is:"
+msgstr "Chúng tôi mong bạn có một trải nghiệm tuyệt vời. Hãy nhớ rằng, Eurosky là:"
 
 #: src/view/com/posts/DiscoverFallbackHeader.tsx:29
 msgid "We ran out of posts from your follows. Here's the latest from <0/>."
@@ -9101,8 +9101,8 @@ msgid "We're having network issues, try again"
 msgstr "Chúng tôi đang gặp vấn đề mạng, hãy thử lại"
 
 #: src/components/dialogs/nuxs/InitialVerificationAnnouncement.tsx:94
-msgid "We’re introducing a new layer of verification on Bluesky — an easy-to-see checkmark."
-msgstr "Chúng tôi đang giới thiệu một lớp xác minh mới trên Bluesky — một dấu tích dễ nổi bật."
+msgid "We’re introducing a new layer of verification on Eurosky — an easy-to-see checkmark."
+msgstr "Chúng tôi đang giới thiệu một lớp xác minh mới trên Eurosky — một dấu tích dễ nổi bật."
 
 #: src/screens/Signup/index.tsx:109
 msgid "We're so excited to have you join us!"
@@ -9384,8 +9384,8 @@ msgid "You don't have any chat requests at the moment."
 msgstr "Hiện tại bạn không có yêu cầu trò chuyện nào."
 
 #: src/view/com/modals/InviteCodes.tsx:67
-msgid "You don't have any invite codes yet! We'll send you some when you've been on Bluesky for a little longer."
-msgstr "Bạn không có mã mời nào cả! Chúng tôi sẽ gửi cho bạn một số mã khi bạn đã sử dụng Bluesky lâu hơn."
+msgid "You don't have any invite codes yet! We'll send you some when you've been on Eurosky for a little longer."
+msgstr "Bạn không có mã mời nào cả! Chúng tôi sẽ gửi cho bạn một số mã khi bạn đã sử dụng Eurosky lâu hơn."
 
 #: src/view/screens/SavedFeeds.tsx:137
 msgid "You don't have any pinned feeds."
@@ -9655,8 +9655,8 @@ msgid "Your account repository, containing all public data records, can be downl
 msgstr "Thư mục tài khoản của bạn, chứa tất cả các bản ghi dữ liệu công khai, có thể được tải xuống dưới dạng tệp \"CAR\". Tệp này không bao gồm nhúng phương tiện, chẳng hạn như hình ảnh, hoặc dữ liệu riêng tư của bạn, mà phải được tải riêng lẻ."
 
 #: src/screens/Takendown.tsx:214
-msgid "Your account was found to be in violation of the <0>Bluesky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
-msgstr "Tài khoản của bạn đã vi phạm <0>Điều khoản Dịch vụ của Bluesky Social</0>. Chúng tôi đã gửi email cho bạn nêu rõ vi phạm cụ thể và thời gian đình chỉ (nếu có). Bạn có thể khiếu nại quyết định này nếu bạn cho rằng đã có sự nhầm lẫn."
+msgid "Your account was found to be in violation of the <0>Eurosky Social Terms of Service</0>. You have been sent an email outlining the specific violation and suspension period, if applicable. You can appeal this decision if you believe it was made in error."
+msgstr "Tài khoản của bạn đã vi phạm <0>Điều khoản Dịch vụ của Eurosky Social</0>. Chúng tôi đã gửi email cho bạn nêu rõ vi phạm cụ thể và thời gian đình chỉ (nếu có). Bạn có thể khiếu nại quyết định này nếu bạn cho rằng đã có sự nhầm lẫn."
 
 #: src/screens/Takendown.tsx:154
 msgid "Your appeal has been submitted. If your appeal succeeds, you will receive an email."
@@ -9694,7 +9694,7 @@ msgid "Your email appears to be invalid."
 msgstr "Email của bạn có vẻ không hợp lệ."
 
 #: src/components/dialogs/EmailDialog/screens/VerificationReminder.tsx:65
-msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Bluesky."
+msgid "Your email has not yet been verified. Please verify your email in order to enjoy all the features of Eurosky."
 msgstr ""
 
 #: src/components/dialogs/VerifyEmailDialog.tsx:110
@@ -9763,8 +9763,8 @@ msgid "Your posts, likes, and blocks are public. Mutes are private."
 msgstr "Bài đăng, lượt thích, và lượt chặn của bạn là công khai. Việc ẩn là riêng tư."
 
 #: src/screens/Settings/components/DeactivateAccountDialog.tsx:75
-msgid "Your profile, posts, feeds, and lists will no longer be visible to other Bluesky users. You can reactivate your account at any time by logging in."
-msgstr "Hồ sơ, bài đăng, bảng tin, và danh sách của bạn sẽ không còn hiển thị cho người dùng Bluesky khác. Bạn có thể kích hoạt lại tài khoản bất kì lúc nào bằng cách đăng nhập."
+msgid "Your profile, posts, feeds, and lists will no longer be visible to other Eurosky users. You can reactivate your account at any time by logging in."
+msgstr "Hồ sơ, bài đăng, bảng tin, và danh sách của bạn sẽ không còn hiển thị cho người dùng Eurosky khác. Bạn có thể kích hoạt lại tài khoản bất kì lúc nào bằng cách đăng nhập."
 
 #: src/view/com/composer/Composer.tsx:480
 msgid "Your reply has been published"
@@ -9775,8 +9775,8 @@ msgid "Your report will be sent to <0>{0}</0>."
 msgstr "Báo cáo của bạn sẽ được gửi tới <0>{0}</0>."
 
 #: src/components/dms/ReportDialog.tsx:200
-msgid "Your report will be sent to the Bluesky Moderation Service"
-msgstr "Báo cáo của bạn sẽ được gởi đến dịch vụ kiểm duyệt của Bluesky"
+msgid "Your report will be sent to the Eurosky Moderation Service"
+msgstr "Báo cáo của bạn sẽ được gởi đến dịch vụ kiểm duyệt của Eurosky"
 
 #: src/screens/Settings/SettingsInterests.tsx:53
 msgid "Your selected interests help us serve you content you care about."

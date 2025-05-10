@@ -1,9 +1,9 @@
 const createExpoWebpackConfigAsync = require('@expo/webpack-config')
-const {withAlias} = require('@expo/webpack-config/addons')
+const { withAlias } = require('@expo/webpack-config/addons')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
-const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
-const {sentryWebpackPlugin} = require('@sentry/webpack-plugin')
-const {version} = require('./package.json')
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
+const { sentryWebpackPlugin } = require('@sentry/webpack-plugin')
+const { version } = require('./package.json')
 
 const GENERATE_STATS = process.env.EXPO_PUBLIC_GENERATE_STATS === '1'
 const OPEN_ANALYZER = process.env.EXPO_PUBLIC_OPEN_ANALYZER === '1'
@@ -49,7 +49,7 @@ module.exports = async function (env, argv) {
   if (process.env.SENTRY_AUTH_TOKEN) {
     config.plugins.push(
       sentryWebpackPlugin({
-        org: 'blueskyweb',
+        org: 'euroskyweb',
         project: 'app',
         authToken: process.env.SENTRY_AUTH_TOKEN,
         release: {
