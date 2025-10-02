@@ -110,15 +110,11 @@ RUN apt-get update && apt-get install --yes \
   dumb-init \
   ca-certificates
 
-# ENTRYPOINT ["dumb-init", "--"]
-
 WORKDIR /bskyweb
 COPY --from=build-env /bskyweb /usr/bin/bskyweb
-
-# CMD ["/usr/bin/bskyweb"]
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 LABEL org.opencontainers.image.source=https://github.com/bluesky-social/social-app
 LABEL org.opencontainers.image.description="bsky.app Web App"
 LABEL org.opencontainers.image.licenses=MIT
-
-# NOOP
