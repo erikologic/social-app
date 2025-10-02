@@ -13,7 +13,7 @@ env:
 
 jobs:
   build-platforms:
-    if: github.repository == 'bluesky-social/social-app'
+    # if: github.repository == 'bluesky-social/social-app'
     runs-on: ubuntu-latest
     permissions:
       contents: read
