@@ -63,10 +63,16 @@ export const LOG_LEVEL = (process.env.EXPO_PUBLIC_LOG_LEVEL || 'info') as
 export const LOG_DEBUG: string = process.env.EXPO_PUBLIC_LOG_DEBUG || ''
 
 /**
+ * The appview domain to use (without protocol)
+ */
+export const APPVIEW_DOMAIN: string =
+  process.env.EXPO_PUBLIC_APPVIEW_DOMAIN || 'bsky.ts.u-at-proto.work'
+
+/**
  * The DID of the Bluesky appview to proxy to
  */
 export const BLUESKY_PROXY_DID: Did =
-  process.env.EXPO_PUBLIC_BLUESKY_PROXY_DID || 'did:web:api.bsky.app'
+  process.env.EXPO_PUBLIC_BLUESKY_PROXY_DID || `did:web:${APPVIEW_DOMAIN}`
 
 /**
  * The DID of the chat service to proxy to
