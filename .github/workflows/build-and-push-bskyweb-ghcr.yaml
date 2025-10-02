@@ -73,7 +73,6 @@ jobs:
           retention-days: 1
 
   merge-manifests:
-    if: github.repository == 'bluesky-social/social-app'
     runs-on: ubuntu-latest
     needs: build-platforms
     permissions:
