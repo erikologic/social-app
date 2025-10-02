@@ -14,7 +14,7 @@ const root = document.getElementById('app')
 if (!root) throw new Error('No root element')
 
 const agent = new AtpAgent({
-  service: 'https://bsky.ts.u-at-proto.work',
+  service: 'https://public.api.bsky.app',
 })
 
 const uri = `at://${window.location.pathname.slice('/embed/'.length)}`

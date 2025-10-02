@@ -392,19 +392,9 @@ func (srv *Server) Shutdown() error {
 
 // NewTemplateContext returns a new pongo2 context with some default values.
 func (srv *Server) NewTemplateContext() pongo2.Context {
-	// Parse URL to get DID from appview host
-	appviewURL, err := url.Parse(srv.cfg.appviewHost)
-	var appviewDID string
-	if err == nil && appviewURL.Host != "" {
-		appviewDID = fmt.Sprintf("did:web:%s", appviewURL.Host)
-	} else {
-		appviewDID = "did:web:bsky.ts.u-at-proto.work" // fallback to default
-	}
-
 	return pongo2.Context{
 		"staticCDNHost": srv.cfg.staticCDNHost,
 		"favicon":       fmt.Sprintf("%s/static/favicon.png", srv.cfg.staticCDNHost),
-		"appviewDID":    appviewDID,
 	}
 }
 

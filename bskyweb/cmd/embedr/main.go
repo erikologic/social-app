@@ -36,7 +36,7 @@ func run(args []string) {
 				&cli.StringFlag{
 					Name:    "appview-host",
 					Usage:   "method, hostname, and port of PDS instance",
-					Value:   "https://public.bsky.ts.u-at-proto.work",
+					Value:   "https://public.api.bsky.app",
 					EnvVars: []string{"ATP_APPVIEW_HOST"},
 				},
 				&cli.StringFlag{

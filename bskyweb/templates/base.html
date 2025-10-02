@@ -87,22 +87,6 @@
   </style>
 
   {% include "scripts.html" %}
-  <script>
-    // Set the appview DID at runtime from server configuration
-    // Wait for the bundle to load and expose BLUESKY_PROXY_HEADER
-    function setAppviewDID() {
-      if (window.BLUESKY_PROXY_HEADER) {
-        console.log('Setting appview DID to: did:web:bsky.ts.u-at-proto.work#bsky_appview');
-        window.BLUESKY_PROXY_HEADER.set('did:web:bsky.ts.u-at-proto.work#bsky_appview');
-        console.log('Updated BLUESKY_PROXY_HEADER:', JSON.stringify(window.BLUESKY_PROXY_HEADER));
-      } else {
-        // Retry in 100ms if not ready yet
-        setTimeout(setAppviewDID, 100);
-      }
-    }
-    // Start trying to set the appview DID
-    setAppviewDID();
-  </script>
   <link rel="apple-touch-icon" sizes="180x180" href="{{ staticCDNHost }}/static/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ staticCDNHost }}/static/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ staticCDNHost }}/static/favicon-16x16.png">
