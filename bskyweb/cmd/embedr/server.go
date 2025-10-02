@@ -36,6 +36,7 @@ type Server struct {
 	metricsHttpd *http.Server
 	xrpcc        *xrpc.Client
 	dir          identity.Directory
+	appviewHost  string
 }
 
 func serve(cctx *cli.Context) error {
@@ -94,6 +95,7 @@ func serve(cctx *cli.Context) error {
 		xrpcc:        xrpcc,
 		dir:          identity.DefaultDirectory(),
 		metricsHttpd: metricsHttpd,
+		appviewHost:  appviewHost,
 	}
 
 	// Create the HTTP server.
@@ -256,6 +258,15 @@ func (srv *Server) Shutdown() error {
 	}
 
 	return srv.httpd.Shutdown(ctx)
+}
+
+func (srv *Server) NewTemplateContext() map[string]interface{} {
+	appviewURL, _ := url.Parse(srv.appviewHost)
+	publicAppviewDomain := appviewURL.Host
+
+	return map[string]interface{}{
+		"publicAppviewDomain": publicAppviewDomain,
+	}
 }
 
 func (srv *Server) errorHandler(err error, c echo.Context) {

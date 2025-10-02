@@ -45,7 +45,8 @@ func (srv *Server) getBlueskyPost(ctx context.Context, did syntax.DID, rkey synt
 }
 
 func (srv *Server) WebHome(c echo.Context) error {
-	return c.Render(http.StatusOK, "home.html", nil)
+	data := srv.NewTemplateContext()
+	return c.Render(http.StatusOK, "home.html", data)
 }
 
 type OEmbedResponse struct {
@@ -211,5 +212,6 @@ func (srv *Server) WebPostEmbed(c echo.Context) error {
 		}
 	*/
 
-	return c.Render(http.StatusOK, "postEmbed.html", nil)
+	data := srv.NewTemplateContext()
+	return c.Render(http.StatusOK, "postEmbed.html", data)
 }

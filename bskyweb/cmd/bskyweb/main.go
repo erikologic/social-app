@@ -35,10 +35,22 @@ func run(args []string) {
 			Flags: []cli.Flag{
 				&cli.StringFlag{
 					Name:  "appview-host",
-					Usage: "scheme, hostname, and port of PDS instance",
+					Usage: "scheme, hostname, and port of AppView instance (authenticated)",
 					Value: "http://localhost:2584",
 					// retain old PDS env var for easy transition
 					EnvVars: []string{"ATP_APPVIEW_HOST", "ATP_PDS_HOST"},
+				},
+				&cli.StringFlag{
+					Name:    "public-appview-host",
+					Usage:   "scheme, hostname, and port of public AppView instance (unauthenticated)",
+					Value:   "",
+					EnvVars: []string{"ATP_PUBLIC_APPVIEW_HOST"},
+				},
+				&cli.StringFlag{
+					Name:    "feed-owner-did",
+					Usage:   "DID of the feed generator owner (for default feeds)",
+					Value:   "",
+					EnvVars: []string{"FEED_OWNER_DID"},
 				},
 				&cli.StringFlag{
 					Name:     "ogcard-host",

@@ -43,19 +43,23 @@ type Server struct {
 }
 
 type Config struct {
-	debug         bool
-	httpAddress   string
-	appviewHost   string
-	ogcardHost    string
-	linkHost      string
-	ipccHost      string
-	staticCDNHost string
+	debug              bool
+	httpAddress        string
+	appviewHost        string
+	publicAppviewHost  string
+	feedOwnerDID       string
+	ogcardHost         string
+	linkHost           string
+	ipccHost           string
+	staticCDNHost      string
 }
 
 func serve(cctx *cli.Context) error {
 	debug := cctx.Bool("debug")
 	httpAddress := cctx.String("http-address")
 	appviewHost := cctx.String("appview-host")
+	publicAppviewHost := cctx.String("public-appview-host")
+	feedOwnerDID := cctx.String("feed-owner-did")
 	ogcardHost := cctx.String("ogcard-host")
 	linkHost := cctx.String("link-host")
 	ipccHost := cctx.String("ipcc-host")
@@ -101,13 +105,15 @@ func serve(cctx *cli.Context) error {
 		echo:  e,
 		xrpcc: xrpcc,
 		cfg: &Config{
-			debug:         debug,
-			httpAddress:   httpAddress,
-			appviewHost:   appviewHost,
-			ogcardHost:    ogcardHost,
-			linkHost:      linkHost,
-			ipccHost:      ipccHost,
-			staticCDNHost: staticCDNHost,
+			debug:             debug,
+			httpAddress:       httpAddress,
+			appviewHost:       appviewHost,
+			publicAppviewHost: publicAppviewHost,
+			feedOwnerDID:      feedOwnerDID,
+			ogcardHost:        ogcardHost,
+			linkHost:          linkHost,
+			ipccHost:          ipccHost,
+			staticCDNHost:     staticCDNHost,
 		},
 		ipccClient: http.Client{
 			Transport: &http.Transport{
@@ -392,9 +398,32 @@ func (srv *Server) Shutdown() error {
 
 // NewTemplateContext returns a new pongo2 context with some default values.
 func (srv *Server) NewTemplateContext() pongo2.Context {
+	// Parse URLs and extract domains/DIDs
+	appviewURL, _ := url.Parse(srv.cfg.appviewHost)
+	appviewDomain := appviewURL.Host
+	appviewDID := fmt.Sprintf("did:web:%s", appviewDomain)
+
+	publicAppviewDomain := appviewDomain
+	publicAppviewDID := appviewDID
+	if srv.cfg.publicAppviewHost != "" {
+		publicAppviewURL, _ := url.Parse(srv.cfg.publicAppviewHost)
+		publicAppviewDomain = publicAppviewURL.Host
+		publicAppviewDID = fmt.Sprintf("did:web:%s", publicAppviewDomain)
+	}
+
+	feedOwnerDID := srv.cfg.feedOwnerDID
+	if feedOwnerDID == "" {
+		feedOwnerDID = "did:plc:z72i7hdynmk6r22z27h6tvur" // fallback to production bsky
+	}
+
 	return pongo2.Context{
-		"staticCDNHost": srv.cfg.staticCDNHost,
-		"favicon":       fmt.Sprintf("%s/static/favicon.png", srv.cfg.staticCDNHost),
+		"staticCDNHost":       srv.cfg.staticCDNHost,
+		"favicon":             fmt.Sprintf("%s/static/favicon.png", srv.cfg.staticCDNHost),
+		"appviewDomain":       appviewDomain,
+		"appviewDID":          appviewDID,
+		"publicAppviewDomain": publicAppviewDomain,
+		"publicAppviewDID":    publicAppviewDID,
+		"feedOwnerDID":        feedOwnerDID,
 	}
 }
 
