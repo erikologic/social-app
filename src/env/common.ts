@@ -63,10 +63,44 @@ export const LOG_LEVEL = (process.env.EXPO_PUBLIC_LOG_LEVEL || 'info') as
 export const LOG_DEBUG: string = process.env.EXPO_PUBLIC_LOG_DEBUG || ''
 
 /**
- * The DID of the Bluesky appview to proxy to
+ * The appview domain to use (without protocol) - authenticated endpoint
+ */
+export const APPVIEW_DOMAIN: string =
+  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.appviewDomain
+    ? (window as any).BSKY_CONFIG.appviewDomain
+    : process.env.EXPO_PUBLIC_APPVIEW_DOMAIN || 'api.bsky.app'
+
+/**
+ * The DID of the Bluesky appview to proxy to - authenticated endpoint
  */
 export const BLUESKY_PROXY_DID: Did =
-  process.env.EXPO_PUBLIC_BLUESKY_PROXY_DID || 'did:web:api.bsky.app'
+  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.appviewDID
+    ? (window as any).BSKY_CONFIG.appviewDID
+    : process.env.EXPO_PUBLIC_BLUESKY_PROXY_DID || `did:web:${APPVIEW_DOMAIN}`
+
+/**
+ * The public appview domain to use (without protocol) - unauthenticated endpoint
+ */
+export const PUBLIC_APPVIEW_DOMAIN: string =
+  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.publicAppviewDomain
+    ? (window as any).BSKY_CONFIG.publicAppviewDomain
+    : process.env.EXPO_PUBLIC_PUBLIC_APPVIEW_DOMAIN || 'public.api.bsky.app'
+
+/**
+ * The DID of the public Bluesky appview - unauthenticated endpoint
+ */
+export const PUBLIC_BLUESKY_PROXY_DID: Did =
+  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.publicAppviewDID
+    ? (window as any).BSKY_CONFIG.publicAppviewDID
+    : process.env.EXPO_PUBLIC_PUBLIC_BLUESKY_PROXY_DID || `did:web:${PUBLIC_APPVIEW_DOMAIN}`
+
+/**
+ * The DID of the feed generator owner (for default feeds)
+ */
+export const FEED_OWNER_DID: Did =
+  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.feedOwnerDID
+    ? (window as any).BSKY_CONFIG.feedOwnerDID
+    : process.env.EXPO_PUBLIC_FEED_OWNER_DID || 'did:plc:z72i7hdynmk6r22z27h6tvur'
 
 /**
  * The DID of the chat service to proxy to

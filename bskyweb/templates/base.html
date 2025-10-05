@@ -86,6 +86,15 @@
     }
   </style>
 
+  <script>
+    window.BSKY_CONFIG = {
+      appviewDomain: '{{ appviewDomain }}',
+      appviewDID: '{{ appviewDID }}',
+      publicAppviewDomain: '{{ publicAppviewDomain }}',
+      publicAppviewDID: '{{ publicAppviewDID }}',
+      feedOwnerDID: '{{ feedOwnerDID }}',
+    };
+  </script>
   {% include "scripts.html" %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ staticCDNHost }}/static/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="{{ staticCDNHost }}/static/favicon-32x32.png">
