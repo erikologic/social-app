@@ -61,9 +61,12 @@ RUN --mount=type=cache,target=/root/.nvm/.cache \
 
 COPY . .
 
+RUN echo "network-timeout 600000" >> .yarnrc && \
+  echo "registry \"https://registry.yarnpkg.com\"" >> .yarnrc
+
 RUN --mount=type=cache,target=/root/.yarn/berry/cache \
   --mount=type=cache,target=/root/.cache/yarn \
-  . "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && yarn install
+  . "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && yarn install --network-timeout 600000 --network-concurrency 8
 
 RUN --mount=type=cache,target=/root/.yarn/berry/cache \
   --mount=type=cache,target=/root/.cache \
