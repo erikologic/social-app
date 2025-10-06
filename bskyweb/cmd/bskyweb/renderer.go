@@ -2,10 +2,10 @@ package main
 
 import (
 	"bytes"
-	"embed"
 	"errors"
 	"fmt"
 	"io"
+	"io/fs"
 	"path/filepath"
 
 	"github.com/flosch/pongo2/v6"
@@ -14,20 +14,16 @@ import (
 
 type RendererLoader struct {
 	prefix string
-	fs     *embed.FS
+	fs     fs.FS
 }
 
-func NewRendererLoader(prefix string, fs *embed.FS) pongo2.TemplateLoader {
+func NewRendererLoader(prefix string, fsys fs.FS) pongo2.TemplateLoader {
 	return &RendererLoader{
 		prefix: prefix,
-		fs:     fs,
+		fs:     fsys,
 	}
 }
 func (l *RendererLoader) Abs(_, name string) string {
-	// TODO: remove this workaround
-	// Figure out why this method is being called
-	// twice on template names resulting in a failure to resolve
-	// the template name.
 	if filepath.HasPrefix(name, l.prefix) {
 		return name
 	}
@@ -35,9 +31,9 @@ func (l *RendererLoader) Abs(_, name string) string {
 }
 
 func (l *RendererLoader) Get(path string) (io.Reader, error) {
-	b, err := l.fs.ReadFile(path)
+	b, err := fs.ReadFile(l.fs, path)
 	if err != nil {
-		return nil, fmt.Errorf("reading template %q failed: %w", path, err)
+		return nil, fmt.Errorf("reading template %q with prefix %q failed: %w", path, l.prefix, err)
 	}
 	return bytes.NewReader(b), nil
 }
@@ -47,9 +43,9 @@ type Renderer struct {
 	Debug       bool
 }
 
-func NewRenderer(prefix string, fs *embed.FS, debug bool) *Renderer {
+func NewRenderer(prefix string, fsys fs.FS, debug bool) *Renderer {
 	return &Renderer{
-		TemplateSet: pongo2.NewSet(prefix, NewRendererLoader(prefix, fs)),
+		TemplateSet: pongo2.NewSet(prefix, NewRendererLoader(prefix, fsys)),
 		Debug:       debug,
 	}
 }
@@ -68,12 +64,7 @@ func (r Renderer) Render(w io.Writer, name string, data interface{}, c echo.Cont
 	var t *pongo2.Template
 	var err error
 
-	if r.Debug {
-		t, err = pongo2.FromFile(name)
-	} else {
-		t, err = r.TemplateSet.FromFile(name)
-	}
-
+	t, err = r.TemplateSet.FromFile(name)
 	if err != nil {
 		return err
 	}

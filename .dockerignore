@@ -1,0 +1,55 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# CI/CD
+.github
+
+# Documentation
+*.md
+docs
+
+# Development
+.vscode
+.idea
+.DS_Store
+
+# Node
+node_modules
+.expo
+.expo-shared
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs (we build fresh)
+web-build
+dist
+build
+.next
+
+# Tests
+__tests__
+__e2e__
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+coverage
+
+# Mobile specific (not needed for web build)
+ios
+android
+.bundle
+
+# Environment
+.env*
+!.env.example
+
+# Misc
+*.swp
+*.swo
+*~
+.eslintcache

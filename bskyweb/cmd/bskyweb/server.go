@@ -9,7 +9,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"io/fs"
 	"net/http"
 	"net/netip"
 	"net/url"
@@ -134,7 +133,8 @@ func serve(cctx *cli.Context) error {
 	}
 
 	e.HideBanner = true
-	e.Renderer = NewRenderer("templates/", &bskyweb.TemplateFS, debug)
+	templateFS := bskyweb.NewCachedDirFS(".")
+	e.Renderer = NewRenderer("templates/", templateFS, debug)
 	e.HTTPErrorHandler = server.errorHandler
 
 	e.IPExtractor = echo.ExtractIPFromXFFHeader()
@@ -199,18 +199,10 @@ func serve(cctx *cli.Context) error {
 	//
 	// configure routes
 	//
-	// static files
-	staticHandler := http.FileServer(func() http.FileSystem {
-		if debug {
-			log.Debugf("serving static file from the local file system")
-			return http.FS(os.DirFS("static"))
-		}
-		fsys, err := fs.Sub(bskyweb.StaticFS, "static")
-		if err != nil {
-			log.Fatal(err)
-		}
-		return http.FS(fsys)
-	}())
+	// static files - lazy load into memory on first access, then cache
+	staticFS := bskyweb.NewCachedDirFS("static")
+	log.Infof("static file caching enabled")
+	staticHandler := http.FileServer(http.FS(staticFS))
 
 	// enable some special endpoints for the "canonical" deployment (bsky.app). not having these enabled should *not* impact regular operation
 	if canonicalInstance {
@@ -224,7 +216,9 @@ func serve(cctx *cli.Context) error {
 
 	// default to permissive, but Disallow all if flag set
 	if robotsDisallowAll {
-		e.File("/robots.txt", "static/robots-disallow-all.txt")
+		e.GET("/robots.txt", func(c echo.Context) error {
+			return c.File("static/robots-disallow-all.txt")
+		})
 	} else {
 		e.GET("/robots.txt", echo.WrapHandler(staticHandler))
 	}

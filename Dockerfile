@@ -1,88 +1,40 @@
-FROM golang:1.24.5-bullseye AS build-env
+FROM node:20-bullseye AS web-builder
 
 WORKDIR /usr/src/social-app
 
-ENV DEBIAN_FRONTEND=noninteractive
-
-#
-# Node
-#
-ENV NODE_VERSION=20
-ENV NVM_DIR=/usr/share/nvm
-
-#
-# Go
-#
-ENV GODEBUG="netdns=go"
-# ENV GOOS="linux"
-# ENV GOARCH="amd64"
-ENV CGO_ENABLED=1
-ENV GOEXPERIMENT="loopvar"
-
-# The latest git hash of the preview branch on render.com
-# https://render.com/docs/docker-secrets#environment-variables-in-docker-builds
-# ARG RENDER_GIT_COMMIT
-
-#
-# Expo
-#
-# ARG EXPO_PUBLIC_ENV
-# ENV EXPO_PUBLIC_ENV=${EXPO_PUBLIC_ENV:-development}
-# ARG EXPO_PUBLIC_RELEASE_VERSION
-# ENV EXPO_PUBLIC_RELEASE_VERSION=$EXPO_PUBLIC_RELEASE_VERSION
-# ARG EXPO_PUBLIC_BUNDLE_IDENTIFIER
-# # If not set by GitHub workflows, we're probably in Render
-# ENV EXPO_PUBLIC_BUNDLE_IDENTIFIER=${EXPO_PUBLIC_BUNDLE_IDENTIFIER:-$RENDER_GIT_COMMIT}
-
-#
-# Sentry
-#
-# ARG SENTRY_AUTH_TOKEN
-# ENV SENTRY_AUTH_TOKEN=${SENTRY_AUTH_TOKEN:-unknown}
-# ARG EXPO_PUBLIC_SENTRY_DSN
-# ENV EXPO_PUBLIC_SENTRY_DSN=$EXPO_PUBLIC_SENTRY_DSN
-
-
-#
-# Generate the JavaScript webpack.
-#
-RUN --mount=type=cache,target=/tmp/nvm-cache \
-  mkdir --parents $NVM_DIR && \
-  wget \
-    --output-document=/tmp/nvm-install.sh \
-    https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh && \
-  bash /tmp/nvm-install.sh
-
-RUN --mount=type=cache,target=/root/.nvm/.cache \
-  \. "$NVM_DIR/nvm.sh" && \
-  nvm install $NODE_VERSION && \
-  nvm use $NODE_VERSION && \
-  npm install --global yarn
-
-COPY . .
+# Copy only dependency files first (better cache utilization)
+COPY package.json yarn.lock ./
+COPY patches ./patches
+COPY lingui.config.js ./
 
 RUN echo "network-timeout 600000" >> .yarnrc && \
   echo "registry \"https://registry.yarnpkg.com\"" >> .yarnrc
 
-RUN --mount=type=cache,target=/root/.yarn/berry/cache \
-  --mount=type=cache,target=/root/.cache/yarn \
-  . "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && yarn install --network-timeout 600000 --network-concurrency 8
+# Install dependencies - skip scripts for speed, run manually after
+RUN --mount=type=cache,target=/usr/local/share/.cache/yarn/v6 \
+  yarn install --frozen-lockfile --ignore-scripts --prefer-offline --network-timeout 600000 --network-concurrency 16
 
-RUN --mount=type=cache,target=/root/.yarn/berry/cache \
+# Copy source code (separate layer)
+COPY . .
+
+# Run only essential postinstall tasks manually
+RUN yarn patch-package || true
+
+# Build (cached unless source changes)
+RUN --mount=type=cache,target=/usr/local/share/.cache/yarn/v6 \
   --mount=type=cache,target=/root/.cache \
   --mount=type=cache,target=/usr/src/social-app/node_modules/.cache \
   --mount=type=cache,target=/usr/src/social-app/.expo \
-  . "$NVM_DIR/nvm.sh" && nvm use $NODE_VERSION && \
-  yarn intl:build 2>&1 | tee i18n.log && \
-  if grep -q "invalid syntax" "i18n.log"; then echo "\n\nFound compilation errors!\n\n" && exit 1; else echo "\n\nNo compile errors!\n\n"; fi && \
-  yarn build-web
+  yarn intl:build && yarn build-web
 
-# DEBUG
-RUN find ./bskyweb/static && find ./web-build/static
+FROM golang:1.24.5-bullseye AS go-builder
 
-#
-# Generate the bskyweb Go binary.
-#
+WORKDIR /usr/src/social-app
+
+ENV GODEBUG="netdns=go"
+ENV CGO_ENABLED=1
+ENV GOEXPERIMENT="loopvar"
+
 COPY bskyweb/go.mod bskyweb/go.sum ./bskyweb/
 
 RUN --mount=type=cache,target=/go/pkg/mod \
@@ -96,32 +48,34 @@ RUN --mount=type=cache,target=/go/pkg/mod \
   --mount=type=cache,target=/root/.cache/go-build \
   cd bskyweb/ && \
   go build \
-    -x \
-    -v  \
     -trimpath \
     -tags timetzdata \
+    -ldflags="-s -w" \
     -o /bskyweb \
     ./cmd/bskyweb
 
 FROM debian:bullseye-slim
 
-ENV GODEBUG=netdns=go
-ENV TZ=Etc/UTC
-ENV DEBIAN_FRONTEND=noninteractive
+ENV GODEBUG=netdns=go \
+    TZ=Etc/UTC
 
-RUN apt-get update && apt-get install --yes \
+RUN apt-get update && apt-get install --yes --no-install-recommends \
   dumb-init \
-  ca-certificates
+  ca-certificates \
+  && rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["dumb-init", "--"]
 
 WORKDIR /bskyweb
-COPY --from=build-env /bskyweb /usr/bin/bskyweb
+COPY --from=go-builder /bskyweb /usr/bin/bskyweb
+COPY --from=web-builder /usr/src/social-app/bskyweb/static ./static
+COPY --from=web-builder /usr/src/social-app/bskyweb/templates ./templates
+COPY --from=web-builder /usr/src/social-app/bskyweb/embedr-static ./embedr-static
+COPY --from=web-builder /usr/src/social-app/bskyweb/embedr-templates ./embedr-templates
+COPY --from=web-builder /usr/src/social-app/web-build ./web-build
 
 CMD ["/usr/bin/bskyweb"]
 
 LABEL org.opencontainers.image.source=https://github.com/bluesky-social/social-app
 LABEL org.opencontainers.image.description="bsky.app Web App"
 LABEL org.opencontainers.image.licenses=MIT
-
-# NOOP

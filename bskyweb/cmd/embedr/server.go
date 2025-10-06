@@ -5,7 +5,6 @@ import (
 	"errors"
 	"fmt"
 	"html/template"
-	"io/fs"
 	"net/http"
 	"os"
 	"os/signal"
@@ -109,8 +108,9 @@ func serve(cctx *cli.Context) error {
 
 	e.HideBanner = true
 
+	templateFS := bskyweb.NewCachedDirFS("embedr-templates")
 	tmpl := &Template{
-		templates: template.Must(template.ParseFS(bskyweb.EmbedrTemplateFS, "embedr-templates/*.html")),
+		templates: template.Must(template.ParseFS(templateFS, "*.html")),
 	}
 	e.Renderer = tmpl
 	e.HTTPErrorHandler = server.errorHandler
@@ -167,18 +167,10 @@ func serve(cctx *cli.Context) error {
 	//
 	// configure routes
 	//
-	// static files
-	staticHandler := http.FileServer(func() http.FileSystem {
-		if debug {
-			log.Debugf("serving static file from the local file system")
-			return http.FS(os.DirFS("embedr-static"))
-		}
-		fsys, err := fs.Sub(bskyweb.EmbedrStaticFS, "embedr-static")
-		if err != nil {
-			log.Fatal(err)
-		}
-		return http.FS(fsys)
-	}())
+	// static files - lazy load into memory on first access, then cache
+	staticFS := bskyweb.NewCachedDirFS("embedr-static")
+	log.Infof("static file caching enabled")
+	staticHandler := http.FileServer(http.FS(staticFS))
 
 	e.GET("/robots.txt", echo.WrapHandler(staticHandler))
 	e.GET("/ips-v4", echo.WrapHandler(staticHandler))
