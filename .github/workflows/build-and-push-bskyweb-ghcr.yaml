@@ -130,7 +130,7 @@ jobs:
       - name: Inspect image and get digest
         id: inspect
         run: |
-          digest=$(docker buildx imagetools inspect ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:bskyweb-latest --format '{{.Manifest.Digest}}')
+          digest=$(docker buildx imagetools inspect ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:bskyweb-latest | grep "Digest:" | head -1 | awk '{print $2}')
           echo "digest=$digest" >> $GITHUB_OUTPUT
 
       - name: Generate artifact attestation
