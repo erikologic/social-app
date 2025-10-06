@@ -5,8 +5,8 @@ import {type ProxyHeaderValue} from '#/state/session/agent'
 import {
   BLUESKY_PROXY_DID,
   CHAT_PROXY_DID,
-  PUBLIC_APPVIEW_DOMAIN,
   FEED_OWNER_DID,
+  PUBLIC_APPVIEW_DOMAIN,
 } from '#/env'
 
 export const LOCAL_DEV_SERVICE =
@@ -141,8 +141,7 @@ export const BSKY_FEED_OWNER_DIDS = [
   'did:plc:q6gjnaw2blty4crticxkmujt',
 ]
 
-export const DISCOVER_FEED_URI =
-  `at://${FEED_OWNER_DID}/app.bsky.feed.generator/whats-hot`
+export const DISCOVER_FEED_URI = `at://${FEED_OWNER_DID}/app.bsky.feed.generator/whats-hot`
 export const VIDEO_FEED_URI =
   'at://did:plc:z72i7hdynmk6r22z27h6tvur/app.bsky.feed.generator/thevids'
 export const STAGING_VIDEO_FEED_URI =

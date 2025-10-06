@@ -82,7 +82,8 @@ export const BLUESKY_PROXY_DID: Did =
  * The public appview domain to use (without protocol) - unauthenticated endpoint
  */
 export const PUBLIC_APPVIEW_DOMAIN: string =
-  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.publicAppviewDomain
+  typeof window !== 'undefined' &&
+  (window as any).BSKY_CONFIG?.publicAppviewDomain
     ? (window as any).BSKY_CONFIG.publicAppviewDomain
     : process.env.EXPO_PUBLIC_PUBLIC_APPVIEW_DOMAIN || 'public.api.bsky.app'
 
@@ -92,7 +93,8 @@ export const PUBLIC_APPVIEW_DOMAIN: string =
 export const PUBLIC_BLUESKY_PROXY_DID: Did =
   typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.publicAppviewDID
     ? (window as any).BSKY_CONFIG.publicAppviewDID
-    : process.env.EXPO_PUBLIC_PUBLIC_BLUESKY_PROXY_DID || `did:web:${PUBLIC_APPVIEW_DOMAIN}`
+    : process.env.EXPO_PUBLIC_PUBLIC_BLUESKY_PROXY_DID ||
+      `did:web:${PUBLIC_APPVIEW_DOMAIN}`
 
 /**
  * The DID of the feed generator owner (for default feeds)
@@ -100,7 +102,8 @@ export const PUBLIC_BLUESKY_PROXY_DID: Did =
 export const FEED_OWNER_DID: Did =
   typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.feedOwnerDID
     ? (window as any).BSKY_CONFIG.feedOwnerDID
-    : process.env.EXPO_PUBLIC_FEED_OWNER_DID || 'did:plc:z72i7hdynmk6r22z27h6tvur'
+    : process.env.EXPO_PUBLIC_FEED_OWNER_DID ||
+      'did:plc:z72i7hdynmk6r22z27h6tvur'
 
 /**
  * The DID of the chat service to proxy to

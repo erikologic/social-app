@@ -5,11 +5,11 @@ import {
   jsonStringToLex,
 } from '@atproto/api'
 
+import {PUBLIC_BSKY_SERVICE} from '#/lib/constants'
 import {
   getAppLanguageAsContentLanguage,
   getContentLanguages,
 } from '#/state/preferences/languages'
-import {PUBLIC_BSKY_SERVICE} from '#/lib/constants'
 import {type FeedAPI, type FeedAPIResponse} from './types'
 import {createBskyTopicsHeader, isBlueskyOwnedFeed} from './utils'
 

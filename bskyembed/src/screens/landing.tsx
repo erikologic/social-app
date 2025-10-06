@@ -31,7 +31,8 @@ if (!root) throw new Error('No root element')
 initSystemColorMode()
 
 const PUBLIC_APPVIEW =
-  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.publicAppviewDomain
+  typeof window !== 'undefined' &&
+  (window as any).BSKY_CONFIG?.publicAppviewDomain
     ? `https://${(window as any).BSKY_CONFIG.publicAppviewDomain}`
     : 'https://public.api.bsky.app'
 

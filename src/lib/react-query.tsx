@@ -9,9 +9,9 @@ import {
 } from '@tanstack/react-query-persist-client'
 import type React from 'react'
 
+import {PUBLIC_BSKY_SERVICE} from '#/lib/constants'
 import {isNative} from '#/platform/detection'
 import {listenNetworkConfirmed, listenNetworkLost} from '#/state/events'
-import {PUBLIC_BSKY_SERVICE} from '#/lib/constants'
 
 // any query keys in this array will be persisted to AsyncStorage
 export const labelersDetailedInfoQueryKeyRoot = 'labelers-detailed-info'

@@ -14,7 +14,8 @@ const root = document.getElementById('app')
 if (!root) throw new Error('No root element')
 
 const PUBLIC_APPVIEW =
-  typeof window !== 'undefined' && (window as any).BSKY_CONFIG?.publicAppviewDomain
+  typeof window !== 'undefined' &&
+  (window as any).BSKY_CONFIG?.publicAppviewDomain
     ? `https://${(window as any).BSKY_CONFIG.publicAppviewDomain}`
     : 'https://public.api.bsky.app'
 
