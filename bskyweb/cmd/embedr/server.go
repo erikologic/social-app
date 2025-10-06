@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	"net/url"
 	"os"
 	"os/signal"
 	"strings"
@@ -39,7 +40,6 @@ type Server struct {
 }
 
 func serve(cctx *cli.Context) error {
-	debug := cctx.Bool("debug")
 	httpAddress := cctx.String("http-address")
 	appviewHost := cctx.String("appview-host")
 	metricsAddress := cctx.String("metrics-address")
